@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/projects/2023-07-01-mala">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>MaLA - Massive Language Adaptation of Large Language Models | Shaoxiong Ji</title>
+    <meta name="description" content="">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/feats/ramon-salinero-vEE00Hx5d0Q-unsplash-light.jpg')">
+    <h1 id="MaLA+-+Massive+Language+Adaptation+of+Large+Language+Models" class="title">MaLA - Massive Language Adaptation of Large Language Models</h1>
+    <p class="meta"> Shaoxiong Ji</p>
+    <p class="meta">January 1, 2023</p>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ef98c0f0cdd3734"></script>
+  </header>
+  <br />
+  <br />
+  <section class="post-content"><p><br />
+<br /></p>
+
+<p>MaLA-LM focuses on adapting large language models to support <strong>hundreds of languages</strong>, including many underrepresented ones. Our models are multilingual, scalable, and optimized for diverse linguistic tasks. Explore our models on <a href="https://huggingface.co/MaLA-LM">Hugging Face</a>.</p>
+
+<h2 id="featured-️">Featured 🗣️</h2>
+<p>Check out our multilingual LLM collections, featuring models trained to handle <strong>500+ languages</strong>, ideal for global, multilingual applications.</p>
+
+<h3 id="emma-500"><a href="https://huggingface.co/collections/MaLA-LM/emma-500-66eaa9acf1f512c8915b7166"><strong>EMMA-500</strong></a></h3>
+
+<p>EMMA-500 is a state-of-the-art multilingual language model designed to improve language representation, especially in low-resource languages, through continual pre-training on the Llama 2 7B architecture. Leveraging the <a href="https://huggingface.co/collections/MaLA-LM/mala-corpus-66e05127641a51de34d39529">MaLA Corpus</a>, which spans over 500 languages and 74 billion tokens, EMMA-500 excels in multilingual tasks like commonsense reasoning, machine translation, open-ended generation, and text classification.</p>
+
+<p>EMMA-500 outperforms other Llama 2-based models in diverse multilingual settings while maintaining robustness in specialized tasks.</p>
+
+<h3 id="mala-corpus"><a href="https://huggingface.co/collections/MaLA-LM/mala-corpus-66e05127641a51de34d39529"><strong>MaLA corpus</strong></a></h3>
+
+<p>The MaLA Corpus (Massive Language Adaptation) is a comprehensive, multilingual dataset designed to support the continual pre-training of large language models. It covers 939 languages and consists of over 74 billion tokens, making it one of the largest datasets of its kind. With a focus on improving the representation of low-resource languages, the MaLA Corpus is a critical resource for advancing multilingual models, particularly those aimed at serving underrepresented languages.</p>
+
+<ul>
+  <li>Language Coverage: Includes data for 939 languages, with 546 languages having over 100,000 tokens.</li>
+  <li>Pre-processing: The corpus is cleaned and deduplicated to ensure high-quality training data.</li>
+</ul>
+
+<h3 id="mala-500"><a href="https://huggingface.co/collections/MaLA-LM/mala-500-660e57f8e53e3cc2ccd31cb9"><strong>MaLA-500</strong></a></h3>
+
+<p>MaLA-500 is a novel large language model designed to cover an extensive range of 534 languages. This model builds upon LLaMA 2 7B and integrates continued pretraining with vocabulary extension, with an expanded vocabulary size of 260,164, and LoRA low-rank adaptation.</p>
+
+<ul>
+  <li><strong>Continued Pretraining:</strong> Enhances the model’s ability to adapt to a wide range of languages.</li>
+  <li><strong>LoRA Low-Rank Adaptation:</strong> LoRA low-rank adaptation refines the model’s adaptation capabilities.</li>
+  <li><strong>Vocabulary Extension:</strong> MaLA-500 boasts an extended vocabulary size of 260,164.</li>
+  <li><strong>Multilingual Proficiency:</strong> Trained on Glot500-c, covering 534 languages.</li>
+</ul>
+
+<p>With vocabulary extension and LoRA modules, the MaLA-500 introduces additional 2.1B trainable parameters, making the total parameters to be 10.7B.</p>
+
+<h2 id="connect-with-us-on-discord">Connect with Us on Discord</h2>
+<p>For those interested in joining the conversation or learning more about the project, you can connect with the community on Discord: <a href="https://discord.com/invite/F5mEb7U6we">MaLA-LM Discord</a>.</p>
+</section>
+  <br />
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+    <br>
+    
+    <p>
+    
+    <a class="button" href="/tags#Language Technology">
+      <i class="fa fa-tag fa-fw"></i> Language Technology
+    </a>
+    
+    <a class="button" href="/tags#Large Language Models">
+      <i class="fa fa-tag fa-fw"></i> Large Language Models
+    </a>
+    
+    <a class="button" href="/tags#Multilingual NLP">
+      <i class="fa fa-tag fa-fw"></i> Multilingual NLP
+    </a>
+    
+    <a class="button" href="/tags#Projects">
+      <i class="fa fa-tag fa-fw"></i> Projects
+    </a>
+    
+  </p>
+  </div>
+</footer>
+
+  
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'shaoxiongji';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/projects/2023-01-01-hplt">
+        High-Performance Language Technologies
+      </a>
+  </div>
+  
+  
+</div>
+
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

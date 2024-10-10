@@ -1,0 +1,4415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/tags/">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>Tags | Shaoxiong Ji</title>
+    <meta name="description" content="Shaoxiong's Homepage">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/pexels/disco-full.jpeg')">
+    <h1 id="Tags" class="title">
+        Tags
+    </h1>
+
+    
+
+  </header>
+  <section class="post-content"><div class="home">
+
+<!-- cycles through posts to get tags -->
+
+
+
+<!-- cycles through projects collection to get tags -->
+
+
+
+<!-- cycles through talks collection to get tags -->
+
+
+
+<!-- cycles through pages to get tags -->
+
+
+<!-- Displays the list of tags-->
+
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+    <br>
+    
+    <p>
+    
+    <a class="button" href="/tags#Aalto">
+      <i class="fa fa-tag fa-fw"></i> Aalto
+    </a>
+    
+    <a class="button" href="/tags#Attention">
+      <i class="fa fa-tag fa-fw"></i> Attention
+    </a>
+    
+    <a class="button" href="/tags#Attention Mechanism">
+      <i class="fa fa-tag fa-fw"></i> Attention Mechanism
+    </a>
+    
+    <a class="button" href="/tags#BSc Thesis">
+      <i class="fa fa-tag fa-fw"></i> BSc Thesis
+    </a>
+    
+    <a class="button" href="/tags#Computer Science">
+      <i class="fa fa-tag fa-fw"></i> Computer Science
+    </a>
+    
+    <a class="button" href="/tags#Conferences">
+      <i class="fa fa-tag fa-fw"></i> Conferences
+    </a>
+    
+    <a class="button" href="/tags#Cyberbullying">
+      <i class="fa fa-tag fa-fw"></i> Cyberbullying
+    </a>
+    
+    <a class="button" href="/tags#Cyberbullying Detection">
+      <i class="fa fa-tag fa-fw"></i> Cyberbullying Detection
+    </a>
+    
+    <a class="button" href="/tags#Deep Learning">
+      <i class="fa fa-tag fa-fw"></i> Deep Learning
+    </a>
+    
+    <a class="button" href="/tags#Doctoral Study">
+      <i class="fa fa-tag fa-fw"></i> Doctoral Study
+    </a>
+    
+    <a class="button" href="/tags#Dynamic Time Wrapping">
+      <i class="fa fa-tag fa-fw"></i> Dynamic Time Wrapping
+    </a>
+    
+    <a class="button" href="/tags#Events">
+      <i class="fa fa-tag fa-fw"></i> Events
+    </a>
+    
+    <a class="button" href="/tags#Federated Learning">
+      <i class="fa fa-tag fa-fw"></i> Federated Learning
+    </a>
+    
+    <a class="button" href="/tags#Few-shot Classification">
+      <i class="fa fa-tag fa-fw"></i> Few-shot Classification
+    </a>
+    
+    <a class="button" href="/tags#Healthcare">
+      <i class="fa fa-tag fa-fw"></i> Healthcare
+    </a>
+    
+    <a class="button" href="/tags#Invited Talk">
+      <i class="fa fa-tag fa-fw"></i> Invited Talk
+    </a>
+    
+    <a class="button" href="/tags#Knowledge Graphs">
+      <i class="fa fa-tag fa-fw"></i> Knowledge Graphs
+    </a>
+    
+    <a class="button" href="/tags#Language Technology">
+      <i class="fa fa-tag fa-fw"></i> Language Technology
+    </a>
+    
+    <a class="button" href="/tags#Large Language Models">
+      <i class="fa fa-tag fa-fw"></i> Large Language Models
+    </a>
+    
+    <a class="button" href="/tags#Learning Algorithms">
+      <i class="fa fa-tag fa-fw"></i> Learning Algorithms
+    </a>
+    
+    <a class="button" href="/tags#Learning Paradigms">
+      <i class="fa fa-tag fa-fw"></i> Learning Paradigms
+    </a>
+    
+    <a class="button" href="/tags#Machine Learning">
+      <i class="fa fa-tag fa-fw"></i> Machine Learning
+    </a>
+    
+    <a class="button" href="/tags#Machine Translation">
+      <i class="fa fa-tag fa-fw"></i> Machine Translation
+    </a>
+    
+    <a class="button" href="/tags#Medical Text Processing">
+      <i class="fa fa-tag fa-fw"></i> Medical Text Processing
+    </a>
+    
+    <a class="button" href="/tags#Mental Health">
+      <i class="fa fa-tag fa-fw"></i> Mental Health
+    </a>
+    
+    <a class="button" href="/tags#Meta-learning">
+      <i class="fa fa-tag fa-fw"></i> Meta-learning
+    </a>
+    
+    <a class="button" href="/tags#Model Fusion">
+      <i class="fa fa-tag fa-fw"></i> Model Fusion
+    </a>
+    
+    <a class="button" href="/tags#Multilingual NLP">
+      <i class="fa fa-tag fa-fw"></i> Multilingual NLP
+    </a>
+    
+    <a class="button" href="/tags#NLP">
+      <i class="fa fa-tag fa-fw"></i> NLP
+    </a>
+    
+    <a class="button" href="/tags#NLP4Health">
+      <i class="fa fa-tag fa-fw"></i> NLP4Health
+    </a>
+    
+    <a class="button" href="/tags#Natural Language Processing">
+      <i class="fa fa-tag fa-fw"></i> Natural Language Processing
+    </a>
+    
+    <a class="button" href="/tags#Neural Language Modeling">
+      <i class="fa fa-tag fa-fw"></i> Neural Language Modeling
+    </a>
+    
+    <a class="button" href="/tags#Pretrained Language Models">
+      <i class="fa fa-tag fa-fw"></i> Pretrained Language Models
+    </a>
+    
+    <a class="button" href="/tags#Projects">
+      <i class="fa fa-tag fa-fw"></i> Projects
+    </a>
+    
+    <a class="button" href="/tags#Publications">
+      <i class="fa fa-tag fa-fw"></i> Publications
+    </a>
+    
+    <a class="button" href="/tags#Scientific Articles">
+      <i class="fa fa-tag fa-fw"></i> Scientific Articles
+    </a>
+    
+    <a class="button" href="/tags#Seminars">
+      <i class="fa fa-tag fa-fw"></i> Seminars
+    </a>
+    
+    <a class="button" href="/tags#Suicidal Ideation Detection">
+      <i class="fa fa-tag fa-fw"></i> Suicidal Ideation Detection
+    </a>
+    
+    <a class="button" href="/tags#Talks">
+      <i class="fa fa-tag fa-fw"></i> Talks
+    </a>
+    
+    <a class="button" href="/tags#Time Series">
+      <i class="fa fa-tag fa-fw"></i> Time Series
+    </a>
+    
+    <a class="button" href="/tags#Writing">
+      <i class="fa fa-tag fa-fw"></i> Writing
+    </a>
+    
+  </p>
+  </div>
+</footer>
+
+
+    <!-- Displays the posts and pages that contains the tag-->
+    <div class="posts">
+        
+        <h3 id="Aalto" class="tag-anchor">
+            <a href="#Aalto"><i class="fa fa-tag fa-fw"></i> Aalto</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2020/10/07/Aalto-BSc-thesis.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        An Instruction to Writing Aalto BSc Thesis for Computer Science
+                    </a>
+
+                    <div class="meta">
+                        October 7, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Attention" class="tag-anchor">
+            <a href="#Attention"><i class="fa fa-tag fa-fw"></i> Attention</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Attention+Mechanism" class="tag-anchor">
+            <a href="#Attention+Mechanism"><i class="fa fa-tag fa-fw"></i> Attention Mechanism</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2019/07/11/attentive-federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Attentive Federated Learning
+                    </a>
+
+                    <div class="meta">
+                        July 11, 2019
+                    </div>
+                </h5>
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="BSc+Thesis" class="tag-anchor">
+            <a href="#BSc+Thesis"><i class="fa fa-tag fa-fw"></i> BSc Thesis</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2020/10/07/Aalto-BSc-thesis.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        An Instruction to Writing Aalto BSc Thesis for Computer Science
+                    </a>
+
+                    <div class="meta">
+                        October 7, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Computer+Science" class="tag-anchor">
+            <a href="#Computer+Science"><i class="fa fa-tag fa-fw"></i> Computer Science</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2022/04/01/doctoral-dissertation.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Doctoral Dissertation Submitted for Examination
+                    </a>
+
+                    <div class="meta">
+                        April 1, 2022
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/04/25/practical-tips-for-writing-academic-articles.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Practical Tips for Writing Scientific Articles
+                    </a>
+
+                    <div class="meta">
+                        April 25, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2020/10/07/Aalto-BSc-thesis.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        An Instruction to Writing Aalto BSc Thesis for Computer Science
+                    </a>
+
+                    <div class="meta">
+                        October 7, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Conferences" class="tag-anchor">
+            <a href="#Conferences"><i class="fa fa-tag fa-fw"></i> Conferences</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Cyberbullying" class="tag-anchor">
+            <a href="#Cyberbullying"><i class="fa fa-tag fa-fw"></i> Cyberbullying</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2017/12/02/LP15-launch-event.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Launch Event of ARC Linkage Project for Cyberbullying Detection
+                    </a>
+
+                    <div class="meta">
+                        December 2, 2017
+                    </div>
+                </h5>
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Cyberbullying+Detection" class="tag-anchor">
+            <a href="#Cyberbullying+Detection"><i class="fa fa-tag fa-fw"></i> Cyberbullying Detection</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2017-08-28-cyberbullying-detection.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Interaction Mining for Cyberbullying Detection on Social Network
+                    </a>
+
+                    <div class="meta">
+                        August 28, 2017
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Deep+Learning" class="tag-anchor">
+            <a href="#Deep+Learning"><i class="fa fa-tag fa-fw"></i> Deep Learning</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2018-12-17-federated-deep-learning.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Federated Deep Learning
+                    </a>
+
+                    <div class="meta">
+                        March 30, 2018
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2020-03-01-medical-coding.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Deep Learning for Medical Code Assignment from Clinical Notes
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2022-04-04-nlp-for-healthcare.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Natural Language Processing for Healthcare
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-12-13-nlp-for-mental-health.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Pretrained Language Models for Mental Health
+                    </a>
+
+                    <div class="meta">
+                        October 13, 2021
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-01-01-hplt.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        High-Performance Language Technologies
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Doctoral+Study" class="tag-anchor">
+            <a href="#Doctoral+Study"><i class="fa fa-tag fa-fw"></i> Doctoral Study</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2022/04/01/doctoral-dissertation.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Doctoral Dissertation Submitted for Examination
+                    </a>
+
+                    <div class="meta">
+                        April 1, 2022
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Dynamic+Time+Wrapping" class="tag-anchor">
+            <a href="#Dynamic+Time+Wrapping"><i class="fa fa-tag fa-fw"></i> Dynamic Time Wrapping</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2020/05/25/time-series-indexing.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Time Series Indexing By Dynamic Covering with Cross-Range Constraints
+                    </a>
+
+                    <div class="meta">
+                        May 25, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Events" class="tag-anchor">
+            <a href="#Events"><i class="fa fa-tag fa-fw"></i> Events</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2017/12/02/LP15-launch-event.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Launch Event of ARC Linkage Project for Cyberbullying Detection
+                    </a>
+
+                    <div class="meta">
+                        December 2, 2017
+                    </div>
+                </h5>
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Federated+Learning" class="tag-anchor">
+            <a href="#Federated+Learning"><i class="fa fa-tag fa-fw"></i> Federated Learning</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/02/26/federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning
+                    </a>
+
+                    <div class="meta">
+                        February 26, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2019/07/11/attentive-federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Attentive Federated Learning
+                    </a>
+
+                    <div class="meta">
+                        July 11, 2019
+                    </div>
+                </h5>
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2018-12-17-federated-deep-learning.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Federated Deep Learning
+                    </a>
+
+                    <div class="meta">
+                        March 30, 2018
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Few-shot+Classification" class="tag-anchor">
+            <a href="#Few-shot+Classification"><i class="fa fa-tag fa-fw"></i> Few-shot Classification</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Healthcare" class="tag-anchor">
+            <a href="#Healthcare"><i class="fa fa-tag fa-fw"></i> Healthcare</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Invited+Talk" class="tag-anchor">
+            <a href="#Invited+Talk"><i class="fa fa-tag fa-fw"></i> Invited Talk</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Knowledge+Graphs" class="tag-anchor">
+            <a href="#Knowledge+Graphs"><i class="fa fa-tag fa-fw"></i> Knowledge Graphs</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Language+Technology" class="tag-anchor">
+            <a href="#Language+Technology"><i class="fa fa-tag fa-fw"></i> Language Technology</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-01-01-hplt.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        High-Performance Language Technologies
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-07-01-mala.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        MaLA - Massive Language Adaptation of Large Language Models
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+
+        </div>
+        
+        <h3 id="Large+Language+Models" class="tag-anchor">
+            <a href="#Large+Language+Models"><i class="fa fa-tag fa-fw"></i> Large Language Models</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-01-01-hplt.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        High-Performance Language Technologies
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-07-01-mala.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        MaLA - Massive Language Adaptation of Large Language Models
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+
+        </div>
+        
+        <h3 id="Learning+Algorithms" class="tag-anchor">
+            <a href="#Learning+Algorithms"><i class="fa fa-tag fa-fw"></i> Learning Algorithms</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/02/26/federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning
+                    </a>
+
+                    <div class="meta">
+                        February 26, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Learning+Paradigms" class="tag-anchor">
+            <a href="#Learning+Paradigms"><i class="fa fa-tag fa-fw"></i> Learning Paradigms</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/02/26/federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning
+                    </a>
+
+                    <div class="meta">
+                        February 26, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Machine+Learning" class="tag-anchor">
+            <a href="#Machine+Learning"><i class="fa fa-tag fa-fw"></i> Machine Learning</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Machine+Translation" class="tag-anchor">
+            <a href="#Machine+Translation"><i class="fa fa-tag fa-fw"></i> Machine Translation</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-01-01-hplt.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        High-Performance Language Technologies
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Medical+Text+Processing" class="tag-anchor">
+            <a href="#Medical+Text+Processing"><i class="fa fa-tag fa-fw"></i> Medical Text Processing</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2020-03-01-medical-coding.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Deep Learning for Medical Code Assignment from Clinical Notes
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2022-04-04-nlp-for-healthcare.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Natural Language Processing for Healthcare
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Mental+Health" class="tag-anchor">
+            <a href="#Mental+Health"><i class="fa fa-tag fa-fw"></i> Mental Health</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2017/12/02/LP15-launch-event.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Launch Event of ARC Linkage Project for Cyberbullying Detection
+                    </a>
+
+                    <div class="meta">
+                        December 2, 2017
+                    </div>
+                </h5>
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-12-13-nlp-for-mental-health.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Pretrained Language Models for Mental Health
+                    </a>
+
+                    <div class="meta">
+                        October 13, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Meta-learning" class="tag-anchor">
+            <a href="#Meta-learning"><i class="fa fa-tag fa-fw"></i> Meta-learning</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Model+Fusion" class="tag-anchor">
+            <a href="#Model+Fusion"><i class="fa fa-tag fa-fw"></i> Model Fusion</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/02/26/federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning
+                    </a>
+
+                    <div class="meta">
+                        February 26, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Multilingual+NLP" class="tag-anchor">
+            <a href="#Multilingual+NLP"><i class="fa fa-tag fa-fw"></i> Multilingual NLP</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-07-01-mala.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        MaLA - Massive Language Adaptation of Large Language Models
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+
+        </div>
+        
+        <h3 id="NLP" class="tag-anchor">
+            <a href="#NLP"><i class="fa fa-tag fa-fw"></i> NLP</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="NLP4Health" class="tag-anchor">
+            <a href="#NLP4Health"><i class="fa fa-tag fa-fw"></i> NLP4Health</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2022-04-04-nlp-for-healthcare.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Natural Language Processing for Healthcare
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-12-13-nlp-for-mental-health.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Pretrained Language Models for Mental Health
+                    </a>
+
+                    <div class="meta">
+                        October 13, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Natural+Language+Processing" class="tag-anchor">
+            <a href="#Natural+Language+Processing"><i class="fa fa-tag fa-fw"></i> Natural Language Processing</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2022/04/01/doctoral-dissertation.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Doctoral Dissertation Submitted for Examination
+                    </a>
+
+                    <div class="meta">
+                        April 1, 2022
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Neural+Language+Modeling" class="tag-anchor">
+            <a href="#Neural+Language+Modeling"><i class="fa fa-tag fa-fw"></i> Neural Language Modeling</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2019/07/11/attentive-federated-learning.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Attentive Federated Learning
+                    </a>
+
+                    <div class="meta">
+                        July 11, 2019
+                    </div>
+                </h5>
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Pretrained+Language+Models" class="tag-anchor">
+            <a href="#Pretrained+Language+Models"><i class="fa fa-tag fa-fw"></i> Pretrained Language Models</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Projects" class="tag-anchor">
+            <a href="#Projects"><i class="fa fa-tag fa-fw"></i> Projects</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2017/12/02/LP15-launch-event.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Launch Event of ARC Linkage Project for Cyberbullying Detection
+                    </a>
+
+                    <div class="meta">
+                        December 2, 2017
+                    </div>
+                </h5>
+                
+            
+
+            <!-- Projects -->
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2017-08-28-cyberbullying-detection.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Interaction Mining for Cyberbullying Detection on Social Network
+                    </a>
+
+                    <div class="meta">
+                        August 28, 2017
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2018-12-17-federated-deep-learning.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Federated Deep Learning
+                    </a>
+
+                    <div class="meta">
+                        March 30, 2018
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2020-02-10-suicidal-ideation-detection.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Suicidal Ideation Detection in Online Social Content
+                    </a>
+
+                    <div class="meta">
+                        February 10, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2020-03-01-medical-coding.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Deep Learning for Medical Code Assignment from Clinical Notes
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2022-04-04-nlp-for-healthcare.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Natural Language Processing for Healthcare
+                    </a>
+
+                    <div class="meta">
+                        March 1, 2020
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-12-13-nlp-for-mental-health.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Pretrained Language Models for Mental Health
+                    </a>
+
+                    <div class="meta">
+                        October 13, 2021
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-01-01-hplt.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        High-Performance Language Technologies
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2023-07-01-mala.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        MaLA - Massive Language Adaptation of Large Language Models
+                    </a>
+
+                    <div class="meta">
+                        January 1, 2023
+                    </div>
+                </h5>
+                
+            
+
+        </div>
+        
+        <h3 id="Publications" class="tag-anchor">
+            <a href="#Publications"><i class="fa fa-tag fa-fw"></i> Publications</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/publications/">
+                        <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                        Publications
+                    </a>
+
+                    <div class="meta">
+                        October 9, 2024
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Scientific+Articles" class="tag-anchor">
+            <a href="#Scientific+Articles"><i class="fa fa-tag fa-fw"></i> Scientific Articles</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/04/25/practical-tips-for-writing-academic-articles.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Practical Tips for Writing Scientific Articles
+                    </a>
+
+                    <div class="meta">
+                        April 25, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Seminars" class="tag-anchor">
+            <a href="#Seminars"><i class="fa fa-tag fa-fw"></i> Seminars</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Suicidal+Ideation+Detection" class="tag-anchor">
+            <a href="#Suicidal+Ideation+Detection"><i class="fa fa-tag fa-fw"></i> Suicidal Ideation Detection</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/projects/2020-02-10-suicidal-ideation-detection.html">
+                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                        Suicidal Ideation Detection in Online Social Content
+                    </a>
+
+                    <div class="meta">
+                        February 10, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Talks" class="tag-anchor">
+            <a href="#Talks"><i class="fa fa-tag fa-fw"></i> Talks</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Time+Series" class="tag-anchor">
+            <a href="#Time+Series"><i class="fa fa-tag fa-fw"></i> Time Series</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2020/05/25/time-series-indexing.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Time Series Indexing By Dynamic Covering with Cross-Range Constraints
+                    </a>
+
+                    <div class="meta">
+                        May 25, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+        <h3 id="Writing" class="tag-anchor">
+            <a href="#Writing"><i class="fa fa-tag fa-fw"></i> Writing</a>
+            <a href="#Tags" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+
+        </h3>
+
+        <!-- Posts and collection for each tags -->
+        <div class="tag-posts">
+
+            <!-- Pages -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Posts -->
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2021/04/25/practical-tips-for-writing-academic-articles.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Practical Tips for Writing Scientific Articles
+                    </a>
+
+                    <div class="meta">
+                        April 25, 2021
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+                <h5 class="tag-title">
+                    <a href="/2020/10/07/Aalto-BSc-thesis.html">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        An Instruction to Writing Aalto BSc Thesis for Computer Science
+                    </a>
+
+                    <div class="meta">
+                        October 7, 2020
+                    </div>
+                </h5>
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <!-- Projects -->
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </div>
+        
+
+    </div>
+</div>
+</section>
+
+  <!-- Tag list for projects -->
+  
+  
+
+
+<footer>
+  <div class="tag-list"></div>
+</footer>
+
+
+</article>
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

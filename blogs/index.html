@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/blogs/">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>Blogs | Shaoxiong Ji</title>
+    <meta name="description" content="Shaoxiong's Homepage">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+        <header id="main" style="background-image: url('/img/pexels/book-coffee.jpeg')">
+          <h1 id="Blogs" class="title">
+              Blogs
+          </h1>
+      
+          
+      
+        </header>
+        
+  <div class="posts">
+    <br />
+    
+    
+      
+      <article>
+          <a class="blogs-title" href="/2022/04/01/doctoral-dissertation.html">Doctoral Dissertation Submitted for Examination</a>
+          <p class="meta">April 1, 2022</p>
+          <p class="excerpt"> I submitted my doctoral dissertation for examination. Many thanks to those kind and helpful people and teams in my PhD journey. </p>
+          <hr>
+      </article>
+      
+    
+      
+      <article>
+          <a class="blogs-title" href="/2021/04/25/practical-tips-for-writing-academic-articles.html">Practical Tips for Writing Scientific Articles</a>
+          <p class="meta">April 25, 2021</p>
+          <p class="excerpt"> This post provides several practical tips for writing academic articles and introduces useful resources that can help you to improve your writing and presentation. </p>
+          <hr>
+      </article>
+      
+    
+      
+      <article>
+          <a class="blogs-title" href="/2021/02/26/federated-learning.html">When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning</a>
+          <p class="meta">February 26, 2021</p>
+          <p class="excerpt"> This article explores various learning algorithms to improve the vanilla federated averaging algorithm and reviews model fusion methods, and discusses federated learning in the intersection with other learning paradigms, referred to as federated x... </p>
+          <hr>
+      </article>
+      
+    
+      
+      <article>
+          <a class="blogs-title" href="/2020/10/07/Aalto-BSc-thesis.html">An Instruction to Writing Aalto BSc Thesis for Computer Science</a>
+          <p class="meta">October 7, 2020</p>
+          <p class="excerpt"> This instruction briefs instruction about writing a literature review as your Bachelor thesis. Remember that to read a wide range of articles, have a summary, and keep writing and revising are the keys to a successful literature review. Please act... </p>
+          <hr>
+      </article>
+      
+    
+      
+      <article>
+          <a class="blogs-title" href="/2020/05/25/time-series-indexing.html">Time Series Indexing By Dynamic Covering with Cross-Range Constraints</a>
+          <p class="meta">May 25, 2020</p>
+          <p class="excerpt"> Efficient and scalable time series indexing with a novel structure for tightly covering a given set of time series under the dynamic time warping similarity measurement </p>
+          <hr>
+      </article>
+      
+    
+      
+      <article>
+          <a class="blogs-title" href="/2019/07/11/attentive-federated-learning.html">Attentive Federated Learning</a>
+          <p class="meta">July 11, 2019</p>
+          <p class="excerpt"> Attentive federated learning minimizes the weighted distance between the server model and client models by iteratively updating parameters while attending to the distance between the server model and client models. </p>
+          <hr>
+      </article>
+      
+    
+      
+      <article>
+          <a class="blogs-title" href="/2017/12/02/LP15-launch-event.html">Launch Event of ARC Linkage Project for Cyberbullying Detection</a>
+          <p class="meta">December 2, 2017</p>
+          <p class="excerpt"> The ARC linkage project called interaction mining for cyberbullying detection on social networks is officially launched. A talk about effective conversation to relieve online users' mental health issue is introduced. </p>
+          <hr>
+      </article>
+      
+    
+  </div>
+
+  
+</div>
+      
+        <!-- Tag list for projects -->
+        
+        
+
+
+<footer>
+  <div class="tag-list"></div>
+</footer>
+
+</article>
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

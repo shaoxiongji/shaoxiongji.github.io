@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Home</title>
+        <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+        <link>http://localhost:4000/</link>
+        <description>Shaoxiong&apos;s Homepage</description>
+        <pubDate>Wed, 09 Oct 2024 21:52:12 +0200</pubDate>
+        
+        <item>
+            <title>Doctoral Dissertation Submitted for Examination</title>
+            <link>/2022/04/01/doctoral-dissertation.html</link>
+            <guid isPermaLink="true">/2022/04/01/doctoral-dissertation.html</guid>
+            <description>&lt;p&gt;Today, I submitted my doctoral dissertation.
+It is based on my research outcomes in the Department of Computer Science, Aalto University. 
+It studies deep learning-based natural language processing for healthcare, focusing on clinical text representation, multitask learning, and data-driven applications.&lt;/p&gt;
+
+&lt;p&gt;At the time of completing this dissertation, I would like to thank my supervisor for his patient and helpful guidance, my colleagues in the research group for kind peer support, colleagues from the Science-IT team for helping me with scientific computing, many other Aalto colleagues for helping me in my academic development, Aalto students, whom I had pleasant research experience with, through the Aalto CS courses and thesis projects, and the Aalto occupational healthcare team. 
+During my doctoral candidate, I conducted visiting or collaborative research in a couple of institutes, my special thanks go to my host supervisors and colleagues at the Finnish Institute for Health and Welfare (THL), HUS Helsinki University Hospital, and the Schütze Lab, Institute for Information and Language Processing, University of Munich.&lt;/p&gt;
+
+&lt;p&gt;During my candidature, it is my pleasure and honor to work with brilliant collaborators from different places worldwide. 
+My deepest thanks go to every collaborator.
+I acknowledge the computational resources provided by the Aalto Science-IT project and CSC - IT Center for Science, Finland.
+I would like to thank the Nokia Foundation for granting the Nokia Scholarship to support my research and the ELISE Mobility Program, Finnish Center for Artificial Intelligence (FCAI), and Foundation for Aalto University Science and Technology for providing a travel grant to support my visiting research. 
+Finally, I would like to thank my family and friends for their support in my PhD journey.&lt;/p&gt;
+</description>
+            <pubDate>Fri, 01 Apr 2022 00:00:00 +0200</pubDate>
+        </item>
+        
+        <item>
+            <title>Practical Tips for Writing Scientific Articles</title>
+            <link>/2021/04/25/practical-tips-for-writing-academic-articles.html</link>
+            <guid isPermaLink="true">/2021/04/25/practical-tips-for-writing-academic-articles.html</guid>
+            <description>&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-to-write-a-scientific-paper&quot;&gt;How to Write a Scientific Paper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#formalize-your-notations&quot;&gt;Formalize Your Notations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#prepare-figures&quot;&gt;Prepare Figures&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#schematic-illustration&quot;&gt;Schematic Illustration&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#plot-scientific-figures&quot;&gt;Plot Scientific Figures&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#latex-tips&quot;&gt;LaTex Tips&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#improve-your-references&quot;&gt;Improve Your References&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#checklist-before-sending-your-draft&quot;&gt;Checklist Before Sending Your Draft&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-write-a-scientific-paper&quot;&gt;How to Write a Scientific Paper&lt;/h2&gt;
+&lt;p&gt;Professor Jari Saramäki from Aalto University had an excellent talk about how to write a scientific paper. The recording and &lt;a href=&quot;https://users.aalto.fi/~jsaramak/HowToWriteCommsCoffee.pdf&quot;&gt;slides&lt;/a&gt; are both available online, highly recommended if you are beginning with academic writing.&lt;/p&gt;
+
+&lt;iframe width=&quot;896&quot; height=&quot;504&quot; src=&quot;https://www.youtube.com/embed/cOhz7XFr4mk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;formalize-your-notations&quot;&gt;Formalize Your Notations&lt;/h2&gt;
+&lt;p&gt;Use commonly applied mathematical notations in the field of machine learning. Check out the following two tutorials.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mazhengcn/suggested-notation-for-machine-learning&quot;&gt;Suggested Notation for Machine Learning by Ma et al.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nthu-datalab.github.io/ml/slides/Notation.pdf&quot;&gt;Machine Learning Notation by Shan-Hung Wu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prepare-figures&quot;&gt;Prepare Figures&lt;/h2&gt;
+&lt;p&gt;Prepare nice figures for schematic illustration and results presentations. This will make your readers’ life easy.&lt;/p&gt;
+
+&lt;h3 id=&quot;schematic-illustration&quot;&gt;Schematic Illustration&lt;/h3&gt;
+&lt;p&gt;If you use existing methods, follow a specific pipeline, propose new methods or solutions, and utilize/integrate some specific frameworks in your work, make a schematic visualization for them. You can easily find some nice examples from the Internet, for example, &lt;a href=&quot;https://github.com/tonyleidong/OptimalFlow&quot;&gt;OptimalFlow toolkit&lt;/a&gt; by Tony Dong. You can use &lt;a href=&quot;https://app.diagrams.net&quot;&gt;draw.io&lt;/a&gt; (a web app) or OmniGraffle (macOS only) to draw your own figures. These two tools can help you export vector graphics (PDF and EPS).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ilovephd.com/10-simple-online-drawing-tools-for-effective-thesis-diagrams/&quot;&gt;10 Simple Online Drawing Tools for Effective Thesis Diagrams&lt;/a&gt;, where &lt;a href=&quot;https://texample.net/tikz/examples/tag/diagrams/&quot;&gt;TikZ&lt;/a&gt;, &lt;a href=&quot;https://draw.io&quot;&gt;Draw.io&lt;/a&gt; and &lt;a href=&quot;https://inkscape.org&quot;&gt;InkScape&lt;/a&gt; are my favorites.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*ykYegJgtdSDzOKWa4qODcA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/700/1*AcnCE8pM3msHkFBjIy3C9w.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;plot-scientific-figures&quot;&gt;Plot Scientific Figures&lt;/h3&gt;
+&lt;p&gt;When you prepare your figures for presenting the results, try to plot figures as a pro. 
+Here is a nice step-by-step tutorial on &lt;a href=&quot;https://towardsdatascience.com/an-introduction-to-making-scientific-publication-plots-with-python-ea19dfa7f51e&quot;&gt;how to make scientific plots&lt;/a&gt;. And you can find more in the Internet.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you are using Python, the matplotlib package will definitely help. Here is an excellent &lt;a href=&quot;https://github.com/matplotlib/cheatsheets&quot;&gt;cheatsheet repository&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Use vector graphics in format such as PDF and EPS. In Python Matplotlib, export pdf format by setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;format=&apos;pdf&apos;&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;savefig()&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Scientific style plots. the &lt;a href=&quot;https://github.com/garrettj403/SciencePlots&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SciencePlots&lt;/code&gt; package of Python&lt;/a&gt; has Matplotlib styles to format your figures for scientific papers, presentations and theses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;latex-tips&quot;&gt;LaTex Tips&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Only one sentence per line (it helps with change tracking).&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\label{label_key}&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref{label_key}&lt;/code&gt; for cross-reference. I know several authors, especially MS word users, use static numbering for their sections/figures/tables even when they are writing in LaTex. Please make a change by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\label{label_key}&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\ref{label_key}&lt;/code&gt;, and I promise you will benefit from this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;improve-your-references&quot;&gt;Improve Your References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;use google scholar to generate bibtex items for your references. Here is a useful Chrome plugin called &lt;a href=&quot;https://chrome.google.com/webstore/detail/bibtex-quick-copy-for-goo/lpadjkikoegfojgbhapfmkanmpoejdia?hl=en&quot;&gt;BibTex Quick Copy for Google Scholar&lt;/a&gt;.
+PS: be cautious about potential errors in the auto-generated bib items.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check your references if everything is complete. Don’t miss pages, volumes, or publication venues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BibTeX (in many bibliography styles, including ACL’s) lowercases the titles of conference papers and needs to be told which letters not to lowercase. So if your title has letters that should always be capitals, please protect them with curly braces, for example:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title={ {Can LSTM Learn to Capture Agreement? The Case of Basque} }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;checklist-before-sending-your-draft&quot;&gt;Checklist Before Sending Your Draft&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Proof read your article again. Pay attention to details and fix any minor issues as possible as you can.&lt;/li&gt;
+  &lt;li&gt;Check your spelling and use American English (recommended)&lt;/li&gt;
+  &lt;li&gt;Enumerate all symbols and abbreviations and check if they are consistent.&lt;/li&gt;
+  &lt;li&gt;Check grammar using &lt;a href=&quot;https://www.grammarly.com&quot;&gt;Grammarly.com&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For Aalto Students:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;You can also arrange academic writing consultations with &lt;a href=&quot;https://mycourses.aalto.fi/course/view.php?id=405&quot;&gt;Writing Clinics at Aalto Language Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Use &lt;a href=&quot;https://wiki.aalto.fi/display/turnitin/Turnitin+for+students&quot;&gt;Turnitin&lt;/a&gt; to check the originality for your article and make sure the similarity score is less than 20%.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+            <pubDate>Sun, 25 Apr 2021 00:00:00 +0200</pubDate>
+        </item>
+        
+        <item>
+            <title>When Federated Learning Meets Other Learning Algorithms&amp;#58; From Model Fusion to Federated X Learning</title>
+            <link>/2021/02/26/federated-learning.html</link>
+            <guid isPermaLink="true">/2021/02/26/federated-learning.html</guid>
+            <description>&lt;p&gt;Federated learning is a new learning paradigm that decouples data collection from model training via multi-party computation and model aggregation.
+As a flexible learning setting, federated learning has the potential to integrate with other learning frameworks.
+We conduct a focused survey of federated learning in conjunction with other learning algorithms. 
+Specifically, we explore various learning algorithms to improve the vanilla federated averaging algorithm and review model fusion methods such as adaptive aggregation, regularization, clustered methods, and Bayesian methods. 
+Following the emerging trends, we also discuss federated learning in the intersection with other learning paradigms, referred to as federated x learning, where x includes multitask learning, meta-learning, transfer learning, unsupervised learning, and reinforcement learning. 
+This survey reviews related state of the art, challenges, and future directions.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/img/posts/fedx.svg&quot; /&gt;&lt;br /&gt;
+  &lt;i&gt;Federated learning with other learning algorithms: categorization, conjunctions and representative methods. &lt;a href=&quot;http://localhost:4000/img/posts/fedx.svg&quot;&gt;[View SVG]&lt;/a&gt; &lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The taxonomy scheme is organized as follows.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Federated Model Fusion. We categorize the major improvements to the pioneering FedAvg model aggregation algorithm into four subclasses (i.e., adaptive/attentive methods, regularization methods, clustered methods, and Bayesian methods), together with a special focus on fairness.&lt;/li&gt;
+  &lt;li&gt;Federated Learning Paradigms. We investigate how the various learning paradigms are fitted into the federated learning setting. The learning paradigms include some key supervised learning scenarios such as transfer learning, multitask and meta-learning, and learning algorithms beyond supervised learning such as semi-supervised learning, unsupervised learning, and reinforcement learning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Please check out the paper for details.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Emerging trends in federated learning: From model fusion to federated x learning. &lt;br /&gt;
+S. Ji, T. Saravirta, S. Pan, G. Long, and A. Walid.&lt;br /&gt;
+&lt;a href=&quot;https://arxiv.org/abs/2102.12920&quot;&gt;arXiv preprint arXiv:2102.12920, 2021.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span&gt;Feature Photo by &lt;a href=&quot;https://unsplash.com/@dylan_nolte?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;dylan nolte&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/photos/wYEj-xonKcg&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+            <pubDate>Fri, 26 Feb 2021 00:00:00 +0100</pubDate>
+        </item>
+        
+        <item>
+            <title>An Instruction to Writing Aalto BSc Thesis for Computer Science</title>
+            <link>/2020/10/07/Aalto-BSc-thesis.html</link>
+            <guid isPermaLink="true">/2020/10/07/Aalto-BSc-thesis.html</guid>
+            <description>&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#reading&quot;&gt;Reading&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#where-to-find-papers&quot;&gt;Where to Find Papers?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#writing&quot;&gt;Writing&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#categorization-for-literature&quot;&gt;Categorization for Literature&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#where-to-start&quot;&gt;Where to Start?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#improve-your-references&quot;&gt;Improve Your References&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#checklist-before-sending-your-draft&quot;&gt;Checklist Before Sending Your Draft&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#computing&quot;&gt;Computing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-end&quot;&gt;The End&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This instruction briefs instruction about writing a literature review as your Bachelor thesis. Remember that to read a wide range of articles, have a summary, and keep writing and revising are the keys to a successful literature review. Please actively discuss with your advisor if you have any problems during this procedural circle. Your advisor will try his/her best to give advice or help you solve some problems if necessary.&lt;/p&gt;
+
+&lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
+&lt;p&gt;Keep reading research papers. You need to skim &amp;gt;=100 articles and read ~50 selected papers in detail. Try &lt;a href=&quot;https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf&quot;&gt;the three-pass method&lt;/a&gt;.
+As I advisor, I will recommend several articles to get started. However, you should also search for more by yourself and decide the useful articles to be included in your thesis.&lt;/p&gt;
+
+&lt;h3 id=&quot;where-to-find-papers&quot;&gt;Where to Find Papers?&lt;/h3&gt;
+&lt;p&gt;Many use Google Scholar. Here is a nice blog about &lt;a href=&quot;https://paperpile.com/g/google-scholar-guide/&quot;&gt;how to search effectively with Google Scholar&lt;/a&gt;. 
+Generally speaking, the CS community focuses more on conferences. Finding paper from top venues is a safe way to find papers.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Conferences: computational linguistics(ACL, EMNLP, COLING, NAACL), artificial intelligence and machine learning(NeurIPS, ICLR, AAAI, IJCAI), data mining (SIGKDD, ICDM, CIKM, WSDM, The Web Conference)
+
+Journals: computational linguistics and data mining(TACL, TKDE, TNNLS, etc.), healthcare (Bioinformatics, Journal of biomedical and health informatics, Journal of Biomedical Informatics, etc.)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When you’re reviewing some informal publications (e.g., preprints in arXiv), you must carefully tell the quality. Always remember to discuss this with your advisor.&lt;/p&gt;
+
+&lt;h2 id=&quot;writing&quot;&gt;Writing&lt;/h2&gt;
+&lt;p&gt;Academic writing is not easy. 
+I recommend to check out some nice references for academic writing for computer science, for instance, instructions from &lt;a href=&quot;http://www.cs.toronto.edu/~miller/Research/writing.html&quot;&gt;Renée J. Miller&lt;/a&gt;, &lt;a href=&quot;https://www.cs.rit.edu/~rlaz/writing.html&quot;&gt;Richard Zanibbi&lt;/a&gt;, and &lt;a href=&quot;http://localhost:4000/2021/04/25/practical-tips-for-writing-academic-articles.html&quot;&gt;my personal collection of references for scientific writing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some quick tips:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Avoid mechanistic reporting when you are reviewing papers.&lt;/li&gt;
+  &lt;li&gt;Don’t overuse enumeration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You will use Overleaf and the Aalto thesis template for editing. I have shared / will share the template with you via Aalto email.&lt;/p&gt;
+
+&lt;h3 id=&quot;categorization-for-literature&quot;&gt;Categorization for Literature&lt;/h3&gt;
+&lt;p&gt;The most important task of a literature review-based thesis is to organize your review in a fancy way.&lt;/p&gt;
+
+&lt;p&gt;You can learn the categorization from published surveys or review articles (For example, Fig.3 of &lt;a href=&quot;https://arxiv.org/pdf/2002.00388.pdf&quot;&gt;my recent survey&lt;/a&gt;). You need to propose your outlines, discuss with me, propose your coherent taxonomy, and conduct the qualitative and qualitative analysis of current literature. I will give you feedback and help you to refine it. The following example shows you a simple outline of how to structure your thesis.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Describe in the introduction)&lt;/em&gt; What is general background knowledge of your topic (give a brief introduction, find a formal definition or some informal description)? Why are specific techniques such as deep learning useful in this task (think about your topic’s challenges, what has been solved, what is ongoing, and the research trends)? What categorization of current literature would you propose in your thesis (briefing in the introduction, and explaining in the next section in detail)?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Consider more in-depth in categorization as Sec. 2 )&lt;/em&gt;  What is the framework of your literature review in detail? This section is the divide step in the divide-and-conquer strategy. Perhaps you can categorize existing papers into two folds, i.e., methodologies and applications. Or you can also propose more complex and reasonable categorization (this will be your main contribution, that is, a better proposal, a higher grade).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Sec 3. conquer, i.e., address specific subcategories)&lt;/em&gt; What are the main issues of each subcategory? What models or methods each paper proposes, and what challenges those models to solve (reviewing the articles your advisor sent and you searched)? What makes those models different (summarize their pros and cons)?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Sec. 4)&lt;/em&gt; Are there any practices in the real-world applications (For example, connecting DL models to the industry applications)? Are there any other issues to consider like privacy, ethics, fairness, bias, etc.?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Sec. 5 Provide some useful resources)&lt;/em&gt; Are there any resources, such as datasets, software, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Sec 6)&lt;/em&gt; Are there any unsolved problems or limitations of current research? What is the future direction? What conclusion do you want to make?&lt;/p&gt;
+
+&lt;h3 id=&quot;where-to-start&quot;&gt;Where to Start?&lt;/h3&gt;
+&lt;p&gt;Introduction is for sure the first place to start. However, it would be hard to write the first paragraph as you may not be familiar with a specific field. In this situation, you can write a very draft version, which can be a working plan or a brief plan to categorize your thesis. With this &lt;a href=&quot;#categorization-for-literature&quot;&gt;categorization&lt;/a&gt;, you’ll have a big picture (maybe not very clear). Do not try to write a perfect introduction at the very beginning. Come back to revise the introduction section after you have finished the main body or you’re confident about the topic.&lt;/p&gt;
+
+&lt;h2 id=&quot;improve-your-references&quot;&gt;Improve Your References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;use google scholar to generate bibtex items for your references. Here is a useful Chrome plugin called &lt;a href=&quot;https://chrome.google.com/webstore/detail/bibtex-quick-copy-for-goo/lpadjkikoegfojgbhapfmkanmpoejdia?hl=en&quot;&gt;BibTex Quick Copy for Google Scholar&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check your references if everything is complete. Don’t miss pages, volumes, or publication venues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BibTeX (in many bibliography styles, including ACL’s) lowercases the titles of conference papers and needs to be told which letters not to lowercase. So if your title has letters that should always be capitals, please protect them with curly braces, for example:&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title={ {Can LSTM Learn to Capture Agreement? The Case of Basque} }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;checklist-before-sending-your-draft&quot;&gt;Checklist Before Sending Your Draft&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Check all terms with a capital letter; make sure they’re consistent.&lt;/li&gt;
+  &lt;li&gt;Check your spelling and use American English&lt;/li&gt;
+  &lt;li&gt;Enumerate all symbols and abbreviations and check if they are consistent.&lt;/li&gt;
+  &lt;li&gt;Check grammar using &lt;a href=&quot;https://www.grammarly.com&quot;&gt;Grammarly.com&lt;/a&gt;. You can also arrange academic writing consultations with &lt;a href=&quot;https://mycourses.aalto.fi/course/view.php?id=405&quot;&gt;Writing Clinics at Aalto Language Center&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Use &lt;a href=&quot;https://wiki.aalto.fi/display/turnitin/Turnitin+for+students&quot;&gt;Turnitin&lt;/a&gt; to check the originality for your thesis and make sure the similarity score is less than 20%.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;computing&quot;&gt;Computing&lt;/h2&gt;
+&lt;p&gt;Some of you may conduct small-scale experiments. 
+Check out the university computing resources via &lt;a href=&quot;https://scicomp.aalto.fi/aalto/paniikki.html&quot;&gt;this link&lt;/a&gt;.
+For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC, refer to the &lt;a href=&quot;https://docs.csc.fi/computing/overview/&quot;&gt;CSC documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-end&quot;&gt;The End&lt;/h2&gt;
+&lt;p&gt;I hope this may help. Please keep reading and begin to write whatever you can. You never know what’s gone happen unless you start to write something. Enjoy your writing!&lt;/p&gt;
+
+</description>
+            <pubDate>Wed, 07 Oct 2020 00:00:00 +0200</pubDate>
+        </item>
+        
+        <item>
+            <title>Time Series Indexing By Dynamic Covering with Cross-Range Constraints</title>
+            <link>/2020/05/25/time-series-indexing.html</link>
+            <guid isPermaLink="true">/2020/05/25/time-series-indexing.html</guid>
+            <description>&lt;p&gt;Time series indexing plays an important role in querying and pattern mining of big data. When indexing big time series datasets performing a direct linear scan of all the time series is generally computationally intractable and a more considered approach is needed. This usually involves mapping the data to a tree-like structure with partitions, and then extracting a small number of time series from these partitions for linear scanning. A partition is defined as a low-complexity structure covering a set of relatively similar time series. For a given query time series, a lower bound with respect to each partition can then be employed during indexing instead of directly measuring the similarity between the query time series and each element of the partitions. Using this approach efficient pruning procedures can be implemented, substantially reducing the computational complexity of indexing, and enabling fast data access and querying. The speed-ups achievable using time series partitioning very much depend on how the partitions are defined, the approach used to generate tree-like indexing using these partitions, and the complexity of the lower bound calculation, hence improving on each of these remains an important area of research, and is the focus of this paper.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video width=&quot;560&quot; height=&quot;315&quot; controls=&quot;&quot;&gt;
+    &lt;source src=&quot;https://onedrive.live.com/download?cid=6E0BB69CDAC152EC&amp;amp;resid=6E0BB69CDAC152EC%21720&amp;amp;authkey=AGSlSR4HV1XvEvs&quot; type=&quot;video/mp4&quot; /&gt;Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper proposes a novel structure for tightly covering a given set of time series under the dynamic time warping similarity measurement. The structure, referred to as Dynamic Covering with cross-Range Constraints (DCRC), enables more efficient and scalable indexing to be developed than current hypercube based partitioning approaches. In particular, a lower bound of the DTW distance from a given query time series to a DCRC-based cover set is introduced. By virtue of its tightness, which is proven theoretically, the lower bound can be used for pruning when querying on an indexing tree. If the DCRC based Lower Bound (LB_DCRC) of an upper node in an index tree is larger than a given threshold, all child nodes can be pruned yielding a significant reduction in computational time. A Hierarchical DCRC (HDCRC) structure is proposed to generate the DCRC-tree based indexing and used to develop time series indexing and insertion algorithms. Experimental results for a selection of benchmark time series datasets are presented to illustrate the tightness of LB_DCRC, as well as the pruning efficiency on the DCRC-tree, especially when the time series have large deformations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/posts/ts-HDCRC.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;&lt;center&gt;Fig. Illustration of Hierarchical DCRC with two layers&lt;/center&gt;&lt;/em&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;: &lt;em&gt;Time Series; Dynamic Time Warping; Indexing; R-Tree; Dynamic Covering; Cross-Range Constraints&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Please check out our paper published in &lt;a href=&quot;https://link.springer.com/article/10.1007/s00778-020-00614-9&quot;&gt;The VLDB Journal&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time Series Indexing By Dynamic Covering with Cross-Range Constraints.&lt;/strong&gt;  &lt;br /&gt;
+&lt;em&gt;Tao Sun, Hongbo Liu, Seán McLoone, Shaoxiong Ji, and Xindong Wu&lt;/em&gt;&lt;br /&gt;
+&lt;a href=&quot;https://link.springer.com/article/10.1007/s00778-020-00614-9&quot;&gt;The VLDB Journal&lt;/a&gt;, 2020. [&lt;a href=&quot;http://localhost:4000/papers/vldbj20.pdf&quot;&gt;PDF&lt;/a&gt;] [&lt;a href=&quot;https://github.com/shaoxiongji/DCRC&quot;&gt;Code&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+</description>
+            <pubDate>Mon, 25 May 2020 00:00:00 +0200</pubDate>
+        </item>
+        
+        <item>
+            <title>Attentive Federated Learning</title>
+            <link>/2019/07/11/attentive-federated-learning.html</link>
+            <guid isPermaLink="true">/2019/07/11/attentive-federated-learning.html</guid>
+            <description>&lt;p&gt;Recently, federated learning has attracted great interest from the research community under the umbrella of distributed machine learning. It protects the privacy of data by learning a shared model using distributed training on local client devices without collecting the data on a central server. Distributed intelligent agents take a shared global model from the central server’s parameters as initialization to train their own private models using personal data, and make predictions on their own physical devices.&lt;/p&gt;
+
+&lt;p&gt;Federated learning learns a shared global model by the aggregation of local models on client devices. But simple federated averaging only uses a simple average on client models, ignoring the contributions of different models. For example, in the mobile keyboard applications, language preferences may vary from individual to individual. The contributions of client language models to the central server are quite different. To learn a generalized model that can be quickly adapted to different people’s patterns and preferences, knowledge transferring between server and client, especially the well-trained clients models, should be considered.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/img/posts/paper-fed-att-aggregation.png&quot; /&gt;&lt;br /&gt;
+  &lt;i&gt;Fig 1. Aggregation with the consideration of model importance&lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We introduce an attention mechanism for model aggregation. The intuition behind the federated optimization is to find an optimal global model that can generalize the client models well. In our proposed optimization algorithm, we take it as finding an optimal global model that is close to the client models in parameter space while considering the importance of selected client models during aggregation.&lt;/p&gt;
+
+&lt;p&gt;Attentive federated aggregation is proposed to automatically attend to the weights of the relation between the server model and different client models. The attentive weights are then taken to minimize the expected distance between the server model and client models. 
+The advantages of our proposed method are: 1) it considers the relation between the server model and client models and their weights, and 2) it optimizes the distance between the server model and client models in parameter space to learn a well-generalized server model.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/img/posts/paper-fed-att-method.png&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
+  &lt;i&gt;Fig 2. Attentive Federated Learning&lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Experiments of private language modeling task are conducted to mimic personalized mobile keyboard suggestion. Mobile keyboard suggestion as a language modeling problem is one of the most common tasks because it involves with user interaction which can give instant labeled data for supervised learning. 
+We choose GRU as the local learner because it is a simple RNN variant with less parameters than LSTM, which can save communication cost to some extent. In practice, the mobile keyboard applications predict the next word with several options when a user is typing a sentence.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;publications&quot;&gt;Publications&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Decentralized Knowledge Acquisition for Mobile Internet Applications&lt;/strong&gt;. &lt;br /&gt;
+&lt;em&gt;Jing Jiang, Shaoxiong Ji, and Guodong Long.&lt;/em&gt;&lt;br /&gt;
+&lt;a href=&quot;https://link.springer.com/article/10.1007%2Fs11280-019-00775-w&quot;&gt;World Wide Web Journal&lt;/a&gt;, 2020.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Learning Private Neural Language Modeling with Attentive Aggregation.&lt;/strong&gt; &lt;br /&gt;
+&lt;em&gt;Shaoxiong Ji, Shirui Pan, Guodong Long, Xue Li, Jing Jiang, and Zi Huang&lt;/em&gt;.&lt;br /&gt;
+&lt;a href=&quot;https://arxiv.org/pdf/1812.07108&quot;&gt;2019 International Joint Conference on Neural Networks (IJCNN)&lt;/a&gt;, 2019. &lt;a href=&quot;https://github.com/shaoxiongji/fed-att&quot;&gt;[Code]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;/img/posts/feat-alibaba.jpg&quot;&gt;Feature image&lt;/a&gt; was token by &lt;a href=&quot;http://localhost:4000&quot;&gt;Shaoxiong Ji&lt;/a&gt; in &lt;a href=&quot;https://www.google.com/maps/place/Alibaba+Xixi+Park+%EF%BC%88West+Gate%EF%BC%89/@30.27875,120.02192,17z/data=!4m12!1m6!3m5!1s0x344b64d934be07af:0x63bb414ca9d4b581!2sAlibaba+Xixi+Park+%EF%BC%88South+Gate%EF%BC%89!8m2!3d30.276996!4d120.024338!3m4!1s0x0:0x459bed85621bde90!8m2!3d30.2787497!4d120.0219199&quot;&gt;Alibaba Xixi Park, Hangzhou, Zhejiang, China&lt;/a&gt;.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 11 Jul 2019 00:00:00 +0200</pubDate>
+        </item>
+        
+        <item>
+            <title>Launch Event of ARC Linkage Project for Cyberbullying Detection</title>
+            <link>/2017/12/02/LP15-launch-event.html</link>
+            <guid isPermaLink="true">/2017/12/02/LP15-launch-event.html</guid>
+            <description>&lt;p&gt;The launch event of ARC Linkage Project, namely interaction mining for cyberbullying detection on social networks, is held in UTS in 1st Dec, 2017.
+This project is with four collaborators organizations, i.e., GBCA (Global Business College Australia), ARACY (Australia Research Alliance for Children &amp;amp; Youth), UQ (University of Queensland) and UTS (University of Technology Sydney). This collaboration is expected to increase technical capability for advanced data science application and build tools for social science researcher and psychologist in assisting them to effective detect cyberbullying activities and prevent the potential mental health damage of victims.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/posts/arc-lp15.png&quot; alt=&quot;ARC linkage project&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three student representations in this launch event as follow:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Detecting Abusive Texts on Social Networks;&lt;/li&gt;
+  &lt;li&gt;Effective Conversation to Relieve Online User’s Mental Health Issue;&lt;/li&gt;
+  &lt;li&gt;Privacy-aware Stochastic Optimization on Cyberbullying Detection.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My topic is about effective conversation to relieve online users’ mental health issue.&lt;/p&gt;
+
+&lt;p&gt;Following is the key point of my speech.&lt;/p&gt;
+
+&lt;p&gt;Cyberbullying and mental health is a global issue, especially severe in most developed countries and many emerging markets. Mental health issue is one of the most critical problems caused by cyberbullying. A person with mental health issue is usually bullied.
+And a person tends to develop mental health issue as a result of being bullied.&lt;/p&gt;
+
+&lt;p&gt;According to a survey, 52% young people report being cyber bullied.
+Bullying victims are 2 to 9 times more likely to consider committing suicide.
+According to a WHO report, 1 in 4 people worldwide suffer from mental disorder to some extent.
+And 3 out of 4 people with severe mental disorders do not receive treatment, which makes the problem worse.
+Partly due to severe mental disorder, 900,000 persons commit suicide each year all over the world, making suicide the second most common cause of death among the young.&lt;/p&gt;
+
+&lt;p&gt;A national survey showed that 35% of people with a mental disorder had used a health service and 29% consulted a GP within the 12 months before the survey.&lt;/p&gt;
+
+&lt;p&gt;Except visiting the psychologists, people suffering from mental health issue also use hotline, talk with social workers and get support from family friends and communities.&lt;/p&gt;
+
+&lt;p&gt;Among these types of treatment, talking is the key point of treatment to relieve mental health issue.&lt;/p&gt;
+
+&lt;p&gt;So far, online-conversation-based mental health services is likely to be the potential effective way to address the mental health issue. It provides an anonymous space and various forms of conversations.
+including patient to professional conversations, peer support conversations, patients to volunteers conversations and chatbot conversations. They could be one-to-one, one-to-many, and many-to-many conversations.&lt;/p&gt;
+
+&lt;p&gt;These forms of conversations are easy to access and people can get help from people all over the world. Also, online conversations is a more comfortable way comparing with face-to-face consultation.&lt;/p&gt;
+
+&lt;p&gt;Our aim is to use a automatic software called effective conversation assistant to help mental health patients to relieve their mental issue. Our software will be used by social workers and psychologists to improve their efficiency on producing effective online conversations.&lt;/p&gt;
+
+&lt;p&gt;There are three main functionalities of our effective conversation assistant.
+First, it can analyze the conversation data through natural language understanding techniques.
+Second, it can automatically understand the factors resulting in the mental health issue.
+Third, it evaluate the impact of sentences of the social workers might enter to the online conversations.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Feature Photo by &lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@dmey503?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from Dan Meyers&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;Dan Meyers&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Sat, 02 Dec 2017 00:00:00 +0100</pubDate>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/projects/2020-02-10-suicidal-ideation-detection">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>Suicidal Ideation Detection in Online Social Content | Shaoxiong Ji</title>
+    <meta name="description" content="Suicide has emerged as a critical social health concern in contemporary society, with suicidal ideation representing individuals’ thoughts about self-harm. F...">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/posts/feat-sid-carry-on.jpg')">
+    <h1 id="Suicidal+Ideation+Detection+in+Online+Social+Content" class="title">Suicidal Ideation Detection in Online Social Content</h1>
+    <p class="meta"> Shaoxiong Ji</p>
+    <p class="meta">February 10, 2020</p>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ef98c0f0cdd3734"></script>
+  </header>
+  <br />
+  <br />
+  <section class="post-content"><p>Suicide has emerged as a critical social health concern in contemporary society, with suicidal ideation representing individuals’ thoughts about self-harm. Factors like prolonged exposure to negative emotions or life events can contribute to these thoughts and suicide attempts. Among various suicide prevention strategies, early detection of suicidal ideation proves highly effective. The prevalence of online communication and social networking platforms offers an avenue for individuals to express their struggles and emotions, presenting an opportunity for the early detection of suicidal ideation. This project focuses on investigating online social content for the early identification of suicidal ideation.</p>
+
+<div style="text-align:center;">
+<video class="text-center" width="560" height="315" controls="">
+    <source src="https://onedrive.live.com/download?cid=6E0BB69CDAC152EC&amp;resid=6E0BB69CDAC152EC%21723&amp;authkey=AA6okYt8H7TCXdc" type="video/mp4" />Your browser does not support the video tag.
+</video>
+</div>
+<p><br /></p>
+
+<p>User-generated content, particularly text posted by users, contains valuable information about individuals’ well-being and mental states. The project begins with a comprehensive content analysis to extract knowledge from suicide-related text, employing benchmarking for binary classification of suicidal ideation. This includes using feature extraction-based classifiers and deep neural networks. Recognizing the complexity of suicide motives and the variability of suicidal factors among individuals, the project integrates sentimental clues and topics from user posts. It proposes understanding the relations between these factors and posts through attention relation networks for nuanced suicidal ideation detection. The project also delves into suicidal ideation detection within private chatting scenarios. Addressing the challenge of isolated data in private chat rooms, a knowledge transfer framework is developed to train a global model for knowledge sharing among distributed agents.</p>
+
+<p><img src="http://localhost:4000/img/posts/sid-wc.jpg" alt="word-cloud" /></p>
+
+<p>In summary, the urgent need for early detection of suicidal ideation for suicide prevention is paramount. This project employs content analysis, feature engineering, and deep learning techniques, including deep neural networks, attentive relation networks, and federated transfer learning. The aim is to effectively detect suicidal ideation and ultimately prevent suicides, saving lives.</p>
+
+<h2 id="publications">Publications</h2>
+<p><strong>Suicidal Ideation Detection in Online Social Content</strong>.  <br />
+<em>Shaoxiong Ji</em>.<br />
+<a href="http://localhost:4000/papers/MPhil_thesis_SID.pdf">Master of Philosophy, The University of Queensland</a>. 2020. <br />
+<strong>Suicidal Ideation Detection: A Review of Machine Learning Methods and Applications.</strong>  <br />
+<em>Shaoxiong Ji, Shirui Pan, Xue Li, Erik Cambria, Guodong Long, and Zi Huang</em>.<br />
+<a href="https://arxiv.org/abs/1910.12611">IEEE Transactions on Computational Social Systems</a>, 2021. <br />
+<strong>Suicidal Ideation and Mental Disorder Detection with Attentive Relation Networks.</strong><br />
+<em>Shaoxiong Ji, Xue Li, Zi Huang, and Erik Cambria</em>. <br />
+<a href="https://arxiv.org/abs/2004.07601">Neural Computing and Applications</a>, 2021.  <br />
+<strong>Knowledge Transferring via Model Aggregation for Online Social Care</strong>.   <br />
+<em>Shaoxiong Ji, Guodong Long, Shirui Pan, Tianqing Zhu, Jing Jiang, Sen Wang, and Xue Li</em>. <br />
+<a href="https://arxiv.org/pdf/1905.07665.pdf">arXiv preprint arXiv:1905.07665</a>, 2019. <br />
+<strong>Detecting Suicidal Ideation with Data Protection in Online Communities</strong>.<br />
+<em>Shaoxiong Ji, Guodong Long, Shirui Pan, Tianqing Zhu, Jing Jiang, and Sen Wang</em>.<br />
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-18590-9_17">24th International Conference on Database Systems for Advanced Applications (DASFAA)</a>, 2019. <br />
+<strong>Supervised Learning for Suicidal Ideation Detection in Online User Content</strong>. <br />
+<em>Shaoxiong Ji, Celina Ping Yu, Sai-fu Fung, Shirui Pan, and Guodong Long</em>.<br />
+<a href="http://downloads.hindawi.com/journals/complexity/2018/6157249.pdf">Complexity</a>, 2018. <a href="https://github.com/shaoxiongji/sw-detection">[Code]</a></p>
+
+<p><br /></p>
+<hr />
+
+<p>Feature Photo by <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@dmey503?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Meyers"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Dan Meyers</span></a>
+<br />
+<br />
+<br /></p>
+</section>
+  <br />
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+    <br>
+    
+    <p>
+    
+    <a class="button" href="/tags#Projects">
+      <i class="fa fa-tag fa-fw"></i> Projects
+    </a>
+    
+    <a class="button" href="/tags#Suicidal Ideation Detection">
+      <i class="fa fa-tag fa-fw"></i> Suicidal Ideation Detection
+    </a>
+    
+  </p>
+  </div>
+</footer>
+
+  
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'shaoxiongji';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/projects/2018-12-17-federated-deep-learning">
+        Federated Deep Learning
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/projects/2020-03-01-medical-coding">
+        Deep Learning for Medical Code Assignment from Clinical Notes
+      </a>
+  </div>
+  
+</div>
+
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

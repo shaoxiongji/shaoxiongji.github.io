@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/2021/04/25/practical-tips-for-writing-academic-articles.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>Practical Tips for Writing Scientific Articles | Shaoxiong Ji</title>
+    <meta name="description" content="  How to Write a Scientific Paper  Formalize Your Notations  Prepare Figures          Schematic Illustration      Plot Scientific Figures        LaTex Tips  ...">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/pexels/book-coffee.jpeg')">
+    <h1 id="Practical+Tips+for+Writing+Scientific+Articles" class="title">Practical Tips for Writing Scientific Articles</h1>
+    <p class="meta"> Shaoxiong Ji</p>
+    <p class="meta">April 25, 2021</p>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ef98c0f0cdd3734"></script>
+  </header>
+  <br />
+  <br />
+  <section class="post-content"><ul>
+  <li><a href="#how-to-write-a-scientific-paper">How to Write a Scientific Paper</a></li>
+  <li><a href="#formalize-your-notations">Formalize Your Notations</a></li>
+  <li><a href="#prepare-figures">Prepare Figures</a>
+    <ul>
+      <li><a href="#schematic-illustration">Schematic Illustration</a></li>
+      <li><a href="#plot-scientific-figures">Plot Scientific Figures</a></li>
+    </ul>
+  </li>
+  <li><a href="#latex-tips">LaTex Tips</a></li>
+  <li><a href="#improve-your-references">Improve Your References</a></li>
+  <li><a href="#checklist-before-sending-your-draft">Checklist Before Sending Your Draft</a></li>
+</ul>
+
+<h2 id="how-to-write-a-scientific-paper">How to Write a Scientific Paper</h2>
+<p>Professor Jari Saramäki from Aalto University had an excellent talk about how to write a scientific paper. The recording and <a href="https://users.aalto.fi/~jsaramak/HowToWriteCommsCoffee.pdf">slides</a> are both available online, highly recommended if you are beginning with academic writing.</p>
+
+<iframe width="896" height="504" src="https://www.youtube.com/embed/cOhz7XFr4mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="formalize-your-notations">Formalize Your Notations</h2>
+<p>Use commonly applied mathematical notations in the field of machine learning. Check out the following two tutorials.</p>
+<ul>
+  <li><a href="https://github.com/mazhengcn/suggested-notation-for-machine-learning">Suggested Notation for Machine Learning by Ma et al.</a></li>
+  <li><a href="https://nthu-datalab.github.io/ml/slides/Notation.pdf">Machine Learning Notation by Shan-Hung Wu</a></li>
+</ul>
+
+<h2 id="prepare-figures">Prepare Figures</h2>
+<p>Prepare nice figures for schematic illustration and results presentations. This will make your readers’ life easy.</p>
+
+<h3 id="schematic-illustration">Schematic Illustration</h3>
+<p>If you use existing methods, follow a specific pipeline, propose new methods or solutions, and utilize/integrate some specific frameworks in your work, make a schematic visualization for them. You can easily find some nice examples from the Internet, for example, <a href="https://github.com/tonyleidong/OptimalFlow">OptimalFlow toolkit</a> by Tony Dong. You can use <a href="https://app.diagrams.net">draw.io</a> (a web app) or OmniGraffle (macOS only) to draw your own figures. These two tools can help you export vector graphics (PDF and EPS).</p>
+
+<ul>
+  <li><a href="https://www.ilovephd.com/10-simple-online-drawing-tools-for-effective-thesis-diagrams/">10 Simple Online Drawing Tools for Effective Thesis Diagrams</a>, where <a href="https://texample.net/tikz/examples/tag/diagrams/">TikZ</a>, <a href="https://draw.io">Draw.io</a> and <a href="https://inkscape.org">InkScape</a> are my favorites.</li>
+</ul>
+
+<p><img src="https://miro.medium.com/max/700/1*ykYegJgtdSDzOKWa4qODcA.png" alt="" /></p>
+
+<p><img src="https://miro.medium.com/max/700/1*AcnCE8pM3msHkFBjIy3C9w.png" alt="" /></p>
+
+<h3 id="plot-scientific-figures">Plot Scientific Figures</h3>
+<p>When you prepare your figures for presenting the results, try to plot figures as a pro. 
+Here is a nice step-by-step tutorial on <a href="https://towardsdatascience.com/an-introduction-to-making-scientific-publication-plots-with-python-ea19dfa7f51e">how to make scientific plots</a>. And you can find more in the Internet.</p>
+
+<ul>
+  <li>If you are using Python, the matplotlib package will definitely help. Here is an excellent <a href="https://github.com/matplotlib/cheatsheets">cheatsheet repository</a>.</li>
+  <li>Use vector graphics in format such as PDF and EPS. In Python Matplotlib, export pdf format by setting <code class="language-plaintext highlighter-rouge">format='pdf'</code> in <code class="language-plaintext highlighter-rouge">savefig()</code>.</li>
+  <li>Scientific style plots. the <a href="https://github.com/garrettj403/SciencePlots"><code class="language-plaintext highlighter-rouge">SciencePlots</code> package of Python</a> has Matplotlib styles to format your figures for scientific papers, presentations and theses.</li>
+</ul>
+
+<h2 id="latex-tips">LaTex Tips</h2>
+<ul>
+  <li>Only one sentence per line (it helps with change tracking).</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">\label{label_key}</code> and <code class="language-plaintext highlighter-rouge">\ref{label_key}</code> for cross-reference. I know several authors, especially MS word users, use static numbering for their sections/figures/tables even when they are writing in LaTex. Please make a change by using <code class="language-plaintext highlighter-rouge">\label{label_key}</code> and <code class="language-plaintext highlighter-rouge">\ref{label_key}</code>, and I promise you will benefit from this.</li>
+</ul>
+
+<h2 id="improve-your-references">Improve Your References</h2>
+
+<ul>
+  <li>
+    <p>use google scholar to generate bibtex items for your references. Here is a useful Chrome plugin called <a href="https://chrome.google.com/webstore/detail/bibtex-quick-copy-for-goo/lpadjkikoegfojgbhapfmkanmpoejdia?hl=en">BibTex Quick Copy for Google Scholar</a>.
+PS: be cautious about potential errors in the auto-generated bib items.</p>
+  </li>
+  <li>
+    <p>Check your references if everything is complete. Don’t miss pages, volumes, or publication venues.</p>
+  </li>
+  <li>
+    <p>BibTeX (in many bibliography styles, including ACL’s) lowercases the titles of conference papers and needs to be told which letters not to lowercase. So if your title has letters that should always be capitals, please protect them with curly braces, for example:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title={ {Can LSTM Learn to Capture Agreement? The Case of Basque} }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="checklist-before-sending-your-draft">Checklist Before Sending Your Draft</h2>
+<ol>
+  <li>Proof read your article again. Pay attention to details and fix any minor issues as possible as you can.</li>
+  <li>Check your spelling and use American English (recommended)</li>
+  <li>Enumerate all symbols and abbreviations and check if they are consistent.</li>
+  <li>Check grammar using <a href="https://www.grammarly.com">Grammarly.com</a>.</li>
+</ol>
+
+<p>For Aalto Students:</p>
+<ol>
+  <li>You can also arrange academic writing consultations with <a href="https://mycourses.aalto.fi/course/view.php?id=405">Writing Clinics at Aalto Language Center</a></li>
+  <li>Use <a href="https://wiki.aalto.fi/display/turnitin/Turnitin+for+students">Turnitin</a> to check the originality for your article and make sure the similarity score is less than 20%.</li>
+</ol>
+
+</section>
+  <br />
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+    <br>
+    
+    <p>
+    
+    <a class="button" href="/tags#Computer Science">
+      <i class="fa fa-tag fa-fw"></i> Computer Science
+    </a>
+    
+    <a class="button" href="/tags#Scientific Articles">
+      <i class="fa fa-tag fa-fw"></i> Scientific Articles
+    </a>
+    
+    <a class="button" href="/tags#Writing">
+      <i class="fa fa-tag fa-fw"></i> Writing
+    </a>
+    
+  </p>
+  </div>
+</footer>
+
+  
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'shaoxiongji';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2021/02/26/federated-learning.html">
+        When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/2022/04/01/doctoral-dissertation.html">
+        Doctoral Dissertation Submitted for Examination
+      </a>
+  </div>
+  
+</div>
+
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

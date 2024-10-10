@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/projects/2018-12-17-federated-deep-learning">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>Federated Deep Learning | Shaoxiong Ji</title>
+    <meta name="description" content="Recent strides in machine learning have propelled numerous breakthroughs in various industries, capturing the imagination of researchers and enthusiasts alik...">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/feats/seats.jpg')">
+    <h1 id="Federated+Deep+Learning" class="title">Federated Deep Learning</h1>
+    <p class="meta"> Shaoxiong Ji</p>
+    <p class="meta">March 30, 2018</p>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ef98c0f0cdd3734"></script>
+  </header>
+  <br />
+  <br />
+  <section class="post-content"><p>Recent strides in machine learning have propelled numerous breakthroughs in various industries, capturing the imagination of researchers and enthusiasts alike. While traditional machine learning methodologies necessitate the collection of vast datasets for centralized model training, the advent of distributed machine learning has opened new frontiers for addressing large-scale learning challenges.</p>
+
+<p>One pioneering approach in this landscape is federated learning, a distributed paradigm that disrupts the conventional link between data collection and model training. Employing multi-party computation and model aggregation, federated learning mitigates privacy concerns by keeping data localized. This transformative approach gains further traction in the era of deep neural networks, evolving into what is now known as federated deep learning.</p>
+
+<p>At the forefront of this domain is a project that delves into the nuances of federated averaging and its variants, specifically tailored for various text mining tasks. The driving force behind this endeavor is not only the quest for better model fusion but also a commitment to enhancing communication efficiency and personalization.</p>
+
+<p>The research project explores the intricacies of federated learning through a series of publications that shed light on the latest developments:</p>
+
+<ol>
+  <li>
+    <p><strong>Emerging Trends in Federated Learning: From Model Fusion to Federated X Learning</strong><br />
+This comprehensive review surveys the evolving landscape of federated learning, from foundational model fusion to the cutting-edge Federated X Learning.</p>
+  </li>
+  <li>
+    <p><strong>Dynamic Sampling and Selective Masking for Communication-Efficient Federated Learning</strong><br />
+A paper introduces innovative techniques such as dynamic sampling and selective masking to enhance communication efficiency in federated learning.</p>
+  </li>
+  <li>
+    <p><strong>Decentralized Knowledge Acquisition for Mobile Internet Applications</strong><br />
+A paper explores decentralized knowledge acquisition, a crucial aspect in the realm of mobile internet applications.</p>
+  </li>
+  <li>
+    <p><strong>Learning Private Neural Language Modeling with Attentive Aggregation</strong><br />
+This paper delves into the intricacies of learning private neural language modeling, incorporating attentive aggregation for heightened model fusion.</p>
+  </li>
+  <li>
+    <p><strong>A PyTorch Implementation of Federated Learning</strong><br />
+As a testament to the commitment to open-source collaboration, providing a PyTorch implementation of federated learning, available on Zenodo <a href="https://shaoxiongji.github.io/federated-learning/">[Link]</a>.</p>
+  </li>
+</ol>
+
+<p>As the world witnesses the fusion of federated learning and deep neural networks, the project under discussion stands as a beacon in the exploration of federated deep learning’s potential. With a keen focus on addressing privacy concerns in real-world applications and effective model fusion of neural networks, the research not only advances the field but also fosters a commitment to transparency through open-source implementations.</p>
+
+<p><br />
+<br />
+<strong>Publications</strong><br />
+[1] Emerging Trends in Federated Learning: From Model Fusion to Federated X Learning. Shaoxiong Ji, Teemu Saravirta, Shirui Pan, Guodong Long, and Anwar Walid. arXiv preprint arXiv:2102.12920, 2021.<br />
+[2] Dynamic Sampling and Selective Masking for Communication-Efficient Federated Learning. Shaoxiong Ji, Wenqi Jiang, Anwar Walid, and Xue Li. IEEE Intelligent Systems, 2021.<br />
+[3] Decentralized Knowledge Acquisition for Mobile Internet Applications. Jing Jiang, Shaoxiong Ji, and Guodong Long. World Wide Web, 2020.<br />
+[4] Learning Private Neural Language Modeling with Attentive Aggregation. Shaoxiong Ji, Shirui Pan, Guodong Long, Xue Li, Jing Jiang, and Zi Huang. In Proceedings of the 2019 International Joint Conference on Neural Networks (IJCNN), 2019.<br />
+[5] Shaoxiong Ji. (2018). A PyTorch Implementation of Federated Learning. Zenodo. <a href="https://shaoxiongji.github.io/federated-learning/" class="fa-solid fa-arrow-up-right-from-square"></a> 
+<br />
+<br /></p>
+
+<p><br />
+<br /></p>
+
+<p><span>Feature Photo by <a href="https://unsplash.com/@dylan_nolte?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">dylan nolte</a> on <a href="https://unsplash.com/photos/wYEj-xonKcg">Unsplash</a></span></p>
+</section>
+  <br />
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+    <br>
+    
+    <p>
+    
+    <a class="button" href="/tags#Deep Learning">
+      <i class="fa fa-tag fa-fw"></i> Deep Learning
+    </a>
+    
+    <a class="button" href="/tags#Federated Learning">
+      <i class="fa fa-tag fa-fw"></i> Federated Learning
+    </a>
+    
+    <a class="button" href="/tags#Projects">
+      <i class="fa fa-tag fa-fw"></i> Projects
+    </a>
+    
+  </p>
+  </div>
+</footer>
+
+  
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'shaoxiongji';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/projects/2017-08-28-cyberbullying-detection">
+        Interaction Mining for Cyberbullying Detection on Social Network
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/projects/2020-02-10-suicidal-ideation-detection">
+        Suicidal Ideation Detection in Online Social Content
+      </a>
+  </div>
+  
+</div>
+
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

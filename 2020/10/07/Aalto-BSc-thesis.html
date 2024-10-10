@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/2020/10/07/Aalto-BSc-thesis.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>An Instruction to Writing Aalto BSc Thesis for Computer Science | Shaoxiong Ji</title>
+    <meta name="description" content="  Reading          Where to Find Papers?        Writing          Categorization for Literature      Where to Start?        Improve Your References  Checklist...">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/pexels/book-coffee.jpeg')">
+    <h1 id="An+Instruction+to+Writing+Aalto+BSc+Thesis+for+Computer+Science" class="title">An Instruction to Writing Aalto BSc Thesis for Computer Science</h1>
+    <p class="meta"> Shaoxiong Ji</p>
+    <p class="meta">October 7, 2020</p>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ef98c0f0cdd3734"></script>
+  </header>
+  <br />
+  <br />
+  <section class="post-content"><ul>
+  <li><a href="#reading">Reading</a>
+    <ul>
+      <li><a href="#where-to-find-papers">Where to Find Papers?</a></li>
+    </ul>
+  </li>
+  <li><a href="#writing">Writing</a>
+    <ul>
+      <li><a href="#categorization-for-literature">Categorization for Literature</a></li>
+      <li><a href="#where-to-start">Where to Start?</a></li>
+    </ul>
+  </li>
+  <li><a href="#improve-your-references">Improve Your References</a></li>
+  <li><a href="#checklist-before-sending-your-draft">Checklist Before Sending Your Draft</a></li>
+  <li><a href="#computing">Computing</a></li>
+  <li><a href="#the-end">The End</a></li>
+</ul>
+
+<p><br /></p>
+
+<p>This instruction briefs instruction about writing a literature review as your Bachelor thesis. Remember that to read a wide range of articles, have a summary, and keep writing and revising are the keys to a successful literature review. Please actively discuss with your advisor if you have any problems during this procedural circle. Your advisor will try his/her best to give advice or help you solve some problems if necessary.</p>
+
+<h2 id="reading">Reading</h2>
+<p>Keep reading research papers. You need to skim &gt;=100 articles and read ~50 selected papers in detail. Try <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf">the three-pass method</a>.
+As I advisor, I will recommend several articles to get started. However, you should also search for more by yourself and decide the useful articles to be included in your thesis.</p>
+
+<h3 id="where-to-find-papers">Where to Find Papers?</h3>
+<p>Many use Google Scholar. Here is a nice blog about <a href="https://paperpile.com/g/google-scholar-guide/">how to search effectively with Google Scholar</a>. 
+Generally speaking, the CS community focuses more on conferences. Finding paper from top venues is a safe way to find papers.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Conferences: computational linguistics(ACL, EMNLP, COLING, NAACL), artificial intelligence and machine learning(NeurIPS, ICLR, AAAI, IJCAI), data mining (SIGKDD, ICDM, CIKM, WSDM, The Web Conference)
+
+Journals: computational linguistics and data mining(TACL, TKDE, TNNLS, etc.), healthcare (Bioinformatics, Journal of biomedical and health informatics, Journal of Biomedical Informatics, etc.)
+</code></pre></div></div>
+
+<p>When you’re reviewing some informal publications (e.g., preprints in arXiv), you must carefully tell the quality. Always remember to discuss this with your advisor.</p>
+
+<h2 id="writing">Writing</h2>
+<p>Academic writing is not easy. 
+I recommend to check out some nice references for academic writing for computer science, for instance, instructions from <a href="http://www.cs.toronto.edu/~miller/Research/writing.html">Renée J. Miller</a>, <a href="https://www.cs.rit.edu/~rlaz/writing.html">Richard Zanibbi</a>, and <a href="http://localhost:4000/2021/04/25/practical-tips-for-writing-academic-articles.html">my personal collection of references for scientific writing</a>.</p>
+
+<p>Some quick tips:</p>
+<ul>
+  <li>Avoid mechanistic reporting when you are reviewing papers.</li>
+  <li>Don’t overuse enumeration.</li>
+</ul>
+
+<p>You will use Overleaf and the Aalto thesis template for editing. I have shared / will share the template with you via Aalto email.</p>
+
+<h3 id="categorization-for-literature">Categorization for Literature</h3>
+<p>The most important task of a literature review-based thesis is to organize your review in a fancy way.</p>
+
+<p>You can learn the categorization from published surveys or review articles (For example, Fig.3 of <a href="https://arxiv.org/pdf/2002.00388.pdf">my recent survey</a>). You need to propose your outlines, discuss with me, propose your coherent taxonomy, and conduct the qualitative and qualitative analysis of current literature. I will give you feedback and help you to refine it. The following example shows you a simple outline of how to structure your thesis.</p>
+
+<p><em>(Describe in the introduction)</em> What is general background knowledge of your topic (give a brief introduction, find a formal definition or some informal description)? Why are specific techniques such as deep learning useful in this task (think about your topic’s challenges, what has been solved, what is ongoing, and the research trends)? What categorization of current literature would you propose in your thesis (briefing in the introduction, and explaining in the next section in detail)?</p>
+
+<p><em>(Consider more in-depth in categorization as Sec. 2 )</em>  What is the framework of your literature review in detail? This section is the divide step in the divide-and-conquer strategy. Perhaps you can categorize existing papers into two folds, i.e., methodologies and applications. Or you can also propose more complex and reasonable categorization (this will be your main contribution, that is, a better proposal, a higher grade).</p>
+
+<p><em>(Sec 3. conquer, i.e., address specific subcategories)</em> What are the main issues of each subcategory? What models or methods each paper proposes, and what challenges those models to solve (reviewing the articles your advisor sent and you searched)? What makes those models different (summarize their pros and cons)?</p>
+
+<p><em>(Sec. 4)</em> Are there any practices in the real-world applications (For example, connecting DL models to the industry applications)? Are there any other issues to consider like privacy, ethics, fairness, bias, etc.?</p>
+
+<p><em>(Sec. 5 Provide some useful resources)</em> Are there any resources, such as datasets, software, etc.</p>
+
+<p><em>(Sec 6)</em> Are there any unsolved problems or limitations of current research? What is the future direction? What conclusion do you want to make?</p>
+
+<h3 id="where-to-start">Where to Start?</h3>
+<p>Introduction is for sure the first place to start. However, it would be hard to write the first paragraph as you may not be familiar with a specific field. In this situation, you can write a very draft version, which can be a working plan or a brief plan to categorize your thesis. With this <a href="#categorization-for-literature">categorization</a>, you’ll have a big picture (maybe not very clear). Do not try to write a perfect introduction at the very beginning. Come back to revise the introduction section after you have finished the main body or you’re confident about the topic.</p>
+
+<h2 id="improve-your-references">Improve Your References</h2>
+
+<ul>
+  <li>
+    <p>use google scholar to generate bibtex items for your references. Here is a useful Chrome plugin called <a href="https://chrome.google.com/webstore/detail/bibtex-quick-copy-for-goo/lpadjkikoegfojgbhapfmkanmpoejdia?hl=en">BibTex Quick Copy for Google Scholar</a></p>
+  </li>
+  <li>
+    <p>Check your references if everything is complete. Don’t miss pages, volumes, or publication venues.</p>
+  </li>
+  <li>
+    <p>BibTeX (in many bibliography styles, including ACL’s) lowercases the titles of conference papers and needs to be told which letters not to lowercase. So if your title has letters that should always be capitals, please protect them with curly braces, for example:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title={ {Can LSTM Learn to Capture Agreement? The Case of Basque} }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="checklist-before-sending-your-draft">Checklist Before Sending Your Draft</h2>
+<ol>
+  <li>Check all terms with a capital letter; make sure they’re consistent.</li>
+  <li>Check your spelling and use American English</li>
+  <li>Enumerate all symbols and abbreviations and check if they are consistent.</li>
+  <li>Check grammar using <a href="https://www.grammarly.com">Grammarly.com</a>. You can also arrange academic writing consultations with <a href="https://mycourses.aalto.fi/course/view.php?id=405">Writing Clinics at Aalto Language Center</a></li>
+  <li>Use <a href="https://wiki.aalto.fi/display/turnitin/Turnitin+for+students">Turnitin</a> to check the originality for your thesis and make sure the similarity score is less than 20%.</li>
+</ol>
+
+<h2 id="computing">Computing</h2>
+<p>Some of you may conduct small-scale experiments. 
+Check out the university computing resources via <a href="https://scicomp.aalto.fi/aalto/paniikki.html">this link</a>.
+For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC, refer to the <a href="https://docs.csc.fi/computing/overview/">CSC documentation</a>.</p>
+
+<h2 id="the-end">The End</h2>
+<p>I hope this may help. Please keep reading and begin to write whatever you can. You never know what’s gone happen unless you start to write something. Enjoy your writing!</p>
+
+</section>
+  <br />
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+    <br>
+    
+    <p>
+    
+    <a class="button" href="/tags#Aalto">
+      <i class="fa fa-tag fa-fw"></i> Aalto
+    </a>
+    
+    <a class="button" href="/tags#BSc Thesis">
+      <i class="fa fa-tag fa-fw"></i> BSc Thesis
+    </a>
+    
+    <a class="button" href="/tags#Computer Science">
+      <i class="fa fa-tag fa-fw"></i> Computer Science
+    </a>
+    
+    <a class="button" href="/tags#Writing">
+      <i class="fa fa-tag fa-fw"></i> Writing
+    </a>
+    
+  </p>
+  </div>
+</footer>
+
+  
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'shaoxiongji';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2020/05/25/time-series-indexing.html">
+        Time Series Indexing By Dynamic Covering with Cross-Range Constraints
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/2021/02/26/federated-learning.html">
+        When Federated Learning Meets Other Learning Algorithms&#58; From Model Fusion to Federated X Learning
+      </a>
+  </div>
+  
+</div>
+
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>

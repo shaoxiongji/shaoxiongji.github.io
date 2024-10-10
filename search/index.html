@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- JQuery (used for bootstrap and jekyll search) -->
+    <script src="/assets/js/jquery-3.2.1.min.js" ></script>
+    
+    <!-- Main JS (navbar.js and katex_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/search/">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Google Fonts -->
+    <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+     -->
+
+    <!-- KaTeX 0.8.3 -->
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/katex.min.css">
+    <script src="/assets/js/katex.min.js">
+    </script>
+    
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-111329602-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+    
+    <!-- Manual seo tags -->
+    <title>Search | Shaoxiong Ji</title>
+    <meta name="description" content="Shaoxiong's Homepage">
+    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
+    <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
+    <meta name="author" content="Shaoxiong Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+  <body>
+    <header class="site-header">
+    <!-- Title -->
+	<div class="branding">
+		<h1 class="site-title">
+			<a href="http://localhost:4000">Home</a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear navbar-fixed-top">
+    <a id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul>
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/about/">
+                About
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/publications/">
+                Publications
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="/team/">
+                Team
+            </a>
+        </li>
+        
+        
+        
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/blogs/">
+                Blogs
+            </a>
+        </li>
+        
+
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/projects/">
+                Projects
+            </a>
+        </li>
+        
+
+		
+				<li class="separator">
+						|
+				</li>
+				<li>
+						<a class="clear" href="http://localhost:4000/talks/">
+								Talks
+						</a>
+				</li>
+                
+                
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+        
+        <li class="separator">
+            |
+        </li>
+        <li>
+            <a class="clear" href="http://localhost:4000/tags">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content main">
+      <article class="feature-image">
+  <header id="main" style="background-image: url('/img/pexels/search-map.jpeg')">
+    <h1 id="Search" class="title">
+        Search
+    </h1>
+
+    
+    <h2 class="subtitle">What are you looking for?</h2>
+    
+
+  </header>
+  <section class="post-content"><!-- Html Elements for Search -->
+<input type="text" id="search-input" placeholder="Enter keywords..." class="search-bar">
+<br>
+<br>
+<ul id="results-container"></ul>
+
+<section>
+    <!-- Script pointing to jekyll-search.js -->
+    <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: [
+                    
+                     
+                        {
+                          "title"    : "Doctoral Dissertation Submitted for Examination",
+                          "category" : "",
+                          "tags"     : " Computer Science, Natural Language Processing, Doctoral Study",
+                          "url"      : "/2022/04/01/doctoral-dissertation.html",
+                          "date"     : "April 1, 2022",
+                          "excerpt"  : "Today, I submitted my doctoral dissertation.It is based on my research outcomes in the Department of Computer Science, Aalto University. It studies deep learning-based natural language processing for healthcare, focusing on clinical text represent...",
+                          "content"  : "Today, I submitted my doctoral dissertation.It is based on my research outcomes in the Department of Computer Science, Aalto University. It studies deep learning-based natural language processing for healthcare, focusing on clinical text representation, multitask learning, and data-driven applications.At the time of completing this dissertation, I would like to thank my supervisor for his patient and helpful guidance, my colleagues in the research group for kind peer support, colleagues from the Science-IT team for helping me with scientific computing, many other Aalto colleagues for helping me in my academic development, Aalto students, whom I had pleasant research experience with, through the Aalto CS courses and thesis projects, and the Aalto occupational healthcare team. During my doctoral candidate, I conducted visiting or collaborative research in a couple of institutes, my special thanks go to my host supervisors and colleagues at the Finnish Institute for Health and Welfare (THL), HUS Helsinki University Hospital, and the Schütze Lab, Institute for Information and Language Processing, University of Munich.During my candidature, it is my pleasure and honor to work with brilliant collaborators from different places worldwide. My deepest thanks go to every collaborator.I acknowledge the computational resources provided by the Aalto Science-IT project and CSC - IT Center for Science, Finland.I would like to thank the Nokia Foundation for granting the Nokia Scholarship to support my research and the ELISE Mobility Program, Finnish Center for Artificial Intelligence (FCAI), and Foundation for Aalto University Science and Technology for providing a travel grant to support my visiting research. Finally, I would like to thank my family and friends for their support in my PhD journey."
+                        } ,
+                     
+                        {
+                          "title"    : "Practical Tips for Writing Scientific Articles",
+                          "category" : "",
+                          "tags"     : " Writing, Computer Science, Scientific Articles",
+                          "url"      : "/2021/04/25/practical-tips-for-writing-academic-articles.html",
+                          "date"     : "April 25, 2021",
+                          "excerpt"  : "  How to Write a Scientific Paper  Formalize Your Notations  Prepare Figures          Schematic Illustration      Plot Scientific Figures        LaTex Tips  Improve Your References  Checklist Before Sending Your DraftHow to Write a Scientific Pape...",
+                          "content"  : "  How to Write a Scientific Paper  Formalize Your Notations  Prepare Figures          Schematic Illustration      Plot Scientific Figures        LaTex Tips  Improve Your References  Checklist Before Sending Your DraftHow to Write a Scientific PaperProfessor Jari Saramäki from Aalto University had an excellent talk about how to write a scientific paper. The recording and slides are both available online, highly recommended if you are beginning with academic writing.Formalize Your NotationsUse commonly applied mathematical notations in the field of machine learning. Check out the following two tutorials.  Suggested Notation for Machine Learning by Ma et al.  Machine Learning Notation by Shan-Hung WuPrepare FiguresPrepare nice figures for schematic illustration and results presentations. This will make your readers’ life easy.Schematic IllustrationIf you use existing methods, follow a specific pipeline, propose new methods or solutions, and utilize/integrate some specific frameworks in your work, make a schematic visualization for them. You can easily find some nice examples from the Internet, for example, OptimalFlow toolkit by Tony Dong. You can use draw.io (a web app) or OmniGraffle (macOS only) to draw your own figures. These two tools can help you export vector graphics (PDF and EPS).  10 Simple Online Drawing Tools for Effective Thesis Diagrams, where TikZ, Draw.io and InkScape are my favorites.Plot Scientific FiguresWhen you prepare your figures for presenting the results, try to plot figures as a pro. Here is a nice step-by-step tutorial on how to make scientific plots. And you can find more in the Internet.  If you are using Python, the matplotlib package will definitely help. Here is an excellent cheatsheet repository.  Use vector graphics in format such as PDF and EPS. In Python Matplotlib, export pdf format by setting format='pdf' in savefig().  Scientific style plots. the SciencePlots package of Python has Matplotlib styles to format your figures for scientific papers, presentations and theses.LaTex Tips  Only one sentence per line (it helps with change tracking).  Use \label{label_key} and \ref{label_key} for cross-reference. I know several authors, especially MS word users, use static numbering for their sections/figures/tables even when they are writing in LaTex. Please make a change by using \label{label_key} and \ref{label_key}, and I promise you will benefit from this.Improve Your References      use google scholar to generate bibtex items for your references. Here is a useful Chrome plugin called BibTex Quick Copy for Google Scholar.PS: be cautious about potential errors in the auto-generated bib items.        Check your references if everything is complete. Don’t miss pages, volumes, or publication venues.        BibTeX (in many bibliography styles, including ACL’s) lowercases the titles of conference papers and needs to be told which letters not to lowercase. So if your title has letters that should always be capitals, please protect them with curly braces, for example:    title={ {Can LSTM Learn to Capture Agreement? The Case of Basque} }      Checklist Before Sending Your Draft  Proof read your article again. Pay attention to details and fix any minor issues as possible as you can.  Check your spelling and use American English (recommended)  Enumerate all symbols and abbreviations and check if they are consistent.  Check grammar using Grammarly.com.For Aalto Students:  You can also arrange academic writing consultations with Writing Clinics at Aalto Language Center  Use Turnitin to check the originality for your article and make sure the similarity score is less than 20%."
+                        } ,
+                     
+                        {
+                          "title"    : "When Federated Learning Meets Other Learning Algorithms&amp;#58; From Model Fusion to Federated X Learning",
+                          "category" : "",
+                          "tags"     : " Federated Learning, Learning Algorithms, Model Fusion, Learning Paradigms",
+                          "url"      : "/2021/02/26/federated-learning.html",
+                          "date"     : "February 26, 2021",
+                          "excerpt"  : "Federated learning is a new learning paradigm that decouples data collection from model training via multi-party computation and model aggregation.As a flexible learning setting, federated learning has the potential to integrate with other learnin...",
+                          "content"  : "Federated learning is a new learning paradigm that decouples data collection from model training via multi-party computation and model aggregation.As a flexible learning setting, federated learning has the potential to integrate with other learning frameworks.We conduct a focused survey of federated learning in conjunction with other learning algorithms. Specifically, we explore various learning algorithms to improve the vanilla federated averaging algorithm and review model fusion methods such as adaptive aggregation, regularization, clustered methods, and Bayesian methods. Following the emerging trends, we also discuss federated learning in the intersection with other learning paradigms, referred to as federated x learning, where x includes multitask learning, meta-learning, transfer learning, unsupervised learning, and reinforcement learning. This survey reviews related state of the art, challenges, and future directions.    Federated learning with other learning algorithms: categorization, conjunctions and representative methods. [View SVG] The taxonomy scheme is organized as follows.  Federated Model Fusion. We categorize the major improvements to the pioneering FedAvg model aggregation algorithm into four subclasses (i.e., adaptive/attentive methods, regularization methods, clustered methods, and Bayesian methods), together with a special focus on fairness.  Federated Learning Paradigms. We investigate how the various learning paradigms are fitted into the federated learning setting. The learning paradigms include some key supervised learning scenarios such as transfer learning, multitask and meta-learning, and learning algorithms beyond supervised learning such as semi-supervised learning, unsupervised learning, and reinforcement learning.Please check out the paper for details.  Emerging trends in federated learning: From model fusion to federated x learning. S. Ji, T. Saravirta, S. Pan, G. Long, and A. Walid.arXiv preprint arXiv:2102.12920, 2021.Feature Photo by dylan nolte on Unsplash"
+                        } ,
+                     
+                        {
+                          "title"    : "An Instruction to Writing Aalto BSc Thesis for Computer Science",
+                          "category" : "",
+                          "tags"     : " Aalto, BSc Thesis, Computer Science, Writing",
+                          "url"      : "/2020/10/07/Aalto-BSc-thesis.html",
+                          "date"     : "October 7, 2020",
+                          "excerpt"  : "  Reading          Where to Find Papers?        Writing          Categorization for Literature      Where to Start?        Improve Your References  Checklist Before Sending Your Draft  Computing  The EndThis instruction briefs instruction about wr...",
+                          "content"  : "  Reading          Where to Find Papers?        Writing          Categorization for Literature      Where to Start?        Improve Your References  Checklist Before Sending Your Draft  Computing  The EndThis instruction briefs instruction about writing a literature review as your Bachelor thesis. Remember that to read a wide range of articles, have a summary, and keep writing and revising are the keys to a successful literature review. Please actively discuss with your advisor if you have any problems during this procedural circle. Your advisor will try his/her best to give advice or help you solve some problems if necessary.ReadingKeep reading research papers. You need to skim &gt;=100 articles and read ~50 selected papers in detail. Try the three-pass method.As I advisor, I will recommend several articles to get started. However, you should also search for more by yourself and decide the useful articles to be included in your thesis.Where to Find Papers?Many use Google Scholar. Here is a nice blog about how to search effectively with Google Scholar. Generally speaking, the CS community focuses more on conferences. Finding paper from top venues is a safe way to find papers.Conferences: computational linguistics(ACL, EMNLP, COLING, NAACL), artificial intelligence and machine learning(NeurIPS, ICLR, AAAI, IJCAI), data mining (SIGKDD, ICDM, CIKM, WSDM, The Web Conference)Journals: computational linguistics and data mining(TACL, TKDE, TNNLS, etc.), healthcare (Bioinformatics, Journal of biomedical and health informatics, Journal of Biomedical Informatics, etc.)When you’re reviewing some informal publications (e.g., preprints in arXiv), you must carefully tell the quality. Always remember to discuss this with your advisor.WritingAcademic writing is not easy. I recommend to check out some nice references for academic writing for computer science, for instance, instructions from Renée J. Miller, Richard Zanibbi, and my personal collection of references for scientific writing.Some quick tips:  Avoid mechanistic reporting when you are reviewing papers.  Don’t overuse enumeration.You will use Overleaf and the Aalto thesis template for editing. I have shared / will share the template with you via Aalto email.Categorization for LiteratureThe most important task of a literature review-based thesis is to organize your review in a fancy way.You can learn the categorization from published surveys or review articles (For example, Fig.3 of my recent survey). You need to propose your outlines, discuss with me, propose your coherent taxonomy, and conduct the qualitative and qualitative analysis of current literature. I will give you feedback and help you to refine it. The following example shows you a simple outline of how to structure your thesis.(Describe in the introduction) What is general background knowledge of your topic (give a brief introduction, find a formal definition or some informal description)? Why are specific techniques such as deep learning useful in this task (think about your topic’s challenges, what has been solved, what is ongoing, and the research trends)? What categorization of current literature would you propose in your thesis (briefing in the introduction, and explaining in the next section in detail)?(Consider more in-depth in categorization as Sec. 2 )  What is the framework of your literature review in detail? This section is the divide step in the divide-and-conquer strategy. Perhaps you can categorize existing papers into two folds, i.e., methodologies and applications. Or you can also propose more complex and reasonable categorization (this will be your main contribution, that is, a better proposal, a higher grade).(Sec 3. conquer, i.e., address specific subcategories) What are the main issues of each subcategory? What models or methods each paper proposes, and what challenges those models to solve (reviewing the articles your advisor sent and you searched)? What makes those models different (summarize their pros and cons)?(Sec. 4) Are there any practices in the real-world applications (For example, connecting DL models to the industry applications)? Are there any other issues to consider like privacy, ethics, fairness, bias, etc.?(Sec. 5 Provide some useful resources) Are there any resources, such as datasets, software, etc.(Sec 6) Are there any unsolved problems or limitations of current research? What is the future direction? What conclusion do you want to make?Where to Start?Introduction is for sure the first place to start. However, it would be hard to write the first paragraph as you may not be familiar with a specific field. In this situation, you can write a very draft version, which can be a working plan or a brief plan to categorize your thesis. With this categorization, you’ll have a big picture (maybe not very clear). Do not try to write a perfect introduction at the very beginning. Come back to revise the introduction section after you have finished the main body or you’re confident about the topic.Improve Your References      use google scholar to generate bibtex items for your references. Here is a useful Chrome plugin called BibTex Quick Copy for Google Scholar        Check your references if everything is complete. Don’t miss pages, volumes, or publication venues.        BibTeX (in many bibliography styles, including ACL’s) lowercases the titles of conference papers and needs to be told which letters not to lowercase. So if your title has letters that should always be capitals, please protect them with curly braces, for example:    title={ {Can LSTM Learn to Capture Agreement? The Case of Basque} }      Checklist Before Sending Your Draft  Check all terms with a capital letter; make sure they’re consistent.  Check your spelling and use American English  Enumerate all symbols and abbreviations and check if they are consistent.  Check grammar using Grammarly.com. You can also arrange academic writing consultations with Writing Clinics at Aalto Language Center  Use Turnitin to check the originality for your thesis and make sure the similarity score is less than 20%.ComputingSome of you may conduct small-scale experiments. Check out the university computing resources via this link.For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC, refer to the CSC documentation.The EndI hope this may help. Please keep reading and begin to write whatever you can. You never know what’s gone happen unless you start to write something. Enjoy your writing!"
+                        } ,
+                     
+                        {
+                          "title"    : "Time Series Indexing By Dynamic Covering with Cross-Range Constraints",
+                          "category" : "",
+                          "tags"     : " Time Series, Dynamic Time Wrapping",
+                          "url"      : "/2020/05/25/time-series-indexing.html",
+                          "date"     : "May 25, 2020",
+                          "excerpt"  : "Time series indexing plays an important role in querying and pattern mining of big data. When indexing big time series datasets performing a direct linear scan of all the time series is generally computationally intractable and a more considered a...",
+                          "content"  : "Time series indexing plays an important role in querying and pattern mining of big data. When indexing big time series datasets performing a direct linear scan of all the time series is generally computationally intractable and a more considered approach is needed. This usually involves mapping the data to a tree-like structure with partitions, and then extracting a small number of time series from these partitions for linear scanning. A partition is defined as a low-complexity structure covering a set of relatively similar time series. For a given query time series, a lower bound with respect to each partition can then be employed during indexing instead of directly measuring the similarity between the query time series and each element of the partitions. Using this approach efficient pruning procedures can be implemented, substantially reducing the computational complexity of indexing, and enabling fast data access and querying. The speed-ups achievable using time series partitioning very much depend on how the partitions are defined, the approach used to generate tree-like indexing using these partitions, and the complexity of the lower bound calculation, hence improving on each of these remains an important area of research, and is the focus of this paper.    Your browser does not support the video tag.This paper proposes a novel structure for tightly covering a given set of time series under the dynamic time warping similarity measurement. The structure, referred to as Dynamic Covering with cross-Range Constraints (DCRC), enables more efficient and scalable indexing to be developed than current hypercube based partitioning approaches. In particular, a lower bound of the DTW distance from a given query time series to a DCRC-based cover set is introduced. By virtue of its tightness, which is proven theoretically, the lower bound can be used for pruning when querying on an indexing tree. If the DCRC based Lower Bound (LB_DCRC) of an upper node in an index tree is larger than a given threshold, all child nodes can be pruned yielding a significant reduction in computational time. A Hierarchical DCRC (HDCRC) structure is proposed to generate the DCRC-tree based indexing and used to develop time series indexing and insertion algorithms. Experimental results for a selection of benchmark time series datasets are presented to illustrate the tightness of LB_DCRC, as well as the pruning efficiency on the DCRC-tree, especially when the time series have large deformations.Fig. Illustration of Hierarchical DCRC with two layersKeywords: Time Series; Dynamic Time Warping; Indexing; R-Tree; Dynamic Covering; Cross-Range ConstraintsPlease check out our paper published in The VLDB Journal for details.Time Series Indexing By Dynamic Covering with Cross-Range Constraints.  Tao Sun, Hongbo Liu, Seán McLoone, Shaoxiong Ji, and Xindong WuThe VLDB Journal, 2020. [PDF] [Code]"
+                        } ,
+                     
+                        {
+                          "title"    : "Attentive Federated Learning",
+                          "category" : "",
+                          "tags"     : " Federated Learning, Attention Mechanism, Neural Language Modeling",
+                          "url"      : "/2019/07/11/attentive-federated-learning.html",
+                          "date"     : "July 11, 2019",
+                          "excerpt"  : "Recently, federated learning has attracted great interest from the research community under the umbrella of distributed machine learning. It protects the privacy of data by learning a shared model using distributed training on local client devices...",
+                          "content"  : "Recently, federated learning has attracted great interest from the research community under the umbrella of distributed machine learning. It protects the privacy of data by learning a shared model using distributed training on local client devices without collecting the data on a central server. Distributed intelligent agents take a shared global model from the central server’s parameters as initialization to train their own private models using personal data, and make predictions on their own physical devices.Federated learning learns a shared global model by the aggregation of local models on client devices. But simple federated averaging only uses a simple average on client models, ignoring the contributions of different models. For example, in the mobile keyboard applications, language preferences may vary from individual to individual. The contributions of client language models to the central server are quite different. To learn a generalized model that can be quickly adapted to different people’s patterns and preferences, knowledge transferring between server and client, especially the well-trained clients models, should be considered.    Fig 1. Aggregation with the consideration of model importanceWe introduce an attention mechanism for model aggregation. The intuition behind the federated optimization is to find an optimal global model that can generalize the client models well. In our proposed optimization algorithm, we take it as finding an optimal global model that is close to the client models in parameter space while considering the importance of selected client models during aggregation.Attentive federated aggregation is proposed to automatically attend to the weights of the relation between the server model and different client models. The attentive weights are then taken to minimize the expected distance between the server model and client models. The advantages of our proposed method are: 1) it considers the relation between the server model and client models and their weights, and 2) it optimizes the distance between the server model and client models in parameter space to learn a well-generalized server model.    Fig 2. Attentive Federated LearningExperiments of private language modeling task are conducted to mimic personalized mobile keyboard suggestion. Mobile keyboard suggestion as a language modeling problem is one of the most common tasks because it involves with user interaction which can give instant labeled data for supervised learning. We choose GRU as the local learner because it is a simple RNN variant with less parameters than LSTM, which can save communication cost to some extent. In practice, the mobile keyboard applications predict the next word with several options when a user is typing a sentence.PublicationsDecentralized Knowledge Acquisition for Mobile Internet Applications. Jing Jiang, Shaoxiong Ji, and Guodong Long.World Wide Web Journal, 2020.Learning Private Neural Language Modeling with Attentive Aggregation. Shaoxiong Ji, Shirui Pan, Guodong Long, Xue Li, Jing Jiang, and Zi Huang.2019 International Joint Conference on Neural Networks (IJCNN), 2019. [Code]Feature image was token by Shaoxiong Ji in Alibaba Xixi Park, Hangzhou, Zhejiang, China."
+                        } ,
+                     
+                        {
+                          "title"    : "Launch Event of ARC Linkage Project for Cyberbullying Detection",
+                          "category" : "",
+                          "tags"     : " Events, Projects, Cyberbullying, Mental Health",
+                          "url"      : "/2017/12/02/LP15-launch-event.html",
+                          "date"     : "December 2, 2017",
+                          "excerpt"  : "The launch event of ARC Linkage Project, namely interaction mining for cyberbullying detection on social networks, is held in UTS in 1st Dec, 2017.This project is with four collaborators organizations, i.e., GBCA (Global Business College Australia...",
+                          "content"  : "The launch event of ARC Linkage Project, namely interaction mining for cyberbullying detection on social networks, is held in UTS in 1st Dec, 2017.This project is with four collaborators organizations, i.e., GBCA (Global Business College Australia), ARACY (Australia Research Alliance for Children &amp; Youth), UQ (University of Queensland) and UTS (University of Technology Sydney). This collaboration is expected to increase technical capability for advanced data science application and build tools for social science researcher and psychologist in assisting them to effective detect cyberbullying activities and prevent the potential mental health damage of victims.There are three student representations in this launch event as follow:  Detecting Abusive Texts on Social Networks;  Effective Conversation to Relieve Online User’s Mental Health Issue;  Privacy-aware Stochastic Optimization on Cyberbullying Detection.My topic is about effective conversation to relieve online users’ mental health issue.Following is the key point of my speech.Cyberbullying and mental health is a global issue, especially severe in most developed countries and many emerging markets. Mental health issue is one of the most critical problems caused by cyberbullying. A person with mental health issue is usually bullied.And a person tends to develop mental health issue as a result of being bullied.According to a survey, 52% young people report being cyber bullied.Bullying victims are 2 to 9 times more likely to consider committing suicide.According to a WHO report, 1 in 4 people worldwide suffer from mental disorder to some extent.And 3 out of 4 people with severe mental disorders do not receive treatment, which makes the problem worse.Partly due to severe mental disorder, 900,000 persons commit suicide each year all over the world, making suicide the second most common cause of death among the young.A national survey showed that 35% of people with a mental disorder had used a health service and 29% consulted a GP within the 12 months before the survey.Except visiting the psychologists, people suffering from mental health issue also use hotline, talk with social workers and get support from family friends and communities.Among these types of treatment, talking is the key point of treatment to relieve mental health issue.So far, online-conversation-based mental health services is likely to be the potential effective way to address the mental health issue. It provides an anonymous space and various forms of conversations.including patient to professional conversations, peer support conversations, patients to volunteers conversations and chatbot conversations. They could be one-to-one, one-to-many, and many-to-many conversations.These forms of conversations are easy to access and people can get help from people all over the world. Also, online conversations is a more comfortable way comparing with face-to-face consultation.Our aim is to use a automatic software called effective conversation assistant to help mental health patients to relieve their mental issue. Our software will be used by social workers and psychologists to improve their efficiency on producing effective online conversations.There are three main functionalities of our effective conversation assistant.First, it can analyze the conversation data through natural language understanding techniques.Second, it can automatically understand the factors resulting in the mental health issue.Third, it evaluate the impact of sentences of the social workers might enter to the online conversations.Feature Photo by unsplash-logoDan Meyers"
+                        } 
+                     ,
+                     
+                       {
+                         
+                            "title"    : "Interaction Mining for Cyberbullying Detection on Social Network",
+                            "category" : "",
+                            "tags"     : " Projects, Cyberbullying Detection",
+                            "url"      : "/projects/2017-08-28-cyberbullying-detection",
+                            "date"     : "August 28, 2017",
+                            "excerpt"  : "",
+                            "content"  : "This project plans to build an interactive mining system to detect cyberbullying on social networks that have a large number of participants and a variety of inputs, including conversation texts, time-variant changes and user profiles. The project is designed to change the existing cyberbullying prevention services from reactive keyword filtering to proactive social interaction pattern mining. The intended outcome will enable the early detection and warning of cyberbullying and approach open a new way to discover interaction patterns with a large number of participants over evolving and complex social networks.Linkage Projects - Grant ID: LP150100671 funded by Australian Research Council.Feature Photo by unsplash-logoDan Meyers"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Federated Deep Learning",
+                            "category" : "",
+                            "tags"     : " Projects, Federated Learning, Deep Learning",
+                            "url"      : "/projects/2018-12-17-federated-deep-learning",
+                            "date"     : "March 30, 2018",
+                            "excerpt"  : "",
+                            "content"  : "Recent strides in machine learning have propelled numerous breakthroughs in various industries, capturing the imagination of researchers and enthusiasts alike. While traditional machine learning methodologies necessitate the collection of vast datasets for centralized model training, the advent of distributed machine learning has opened new frontiers for addressing large-scale learning challenges.One pioneering approach in this landscape is federated learning, a distributed paradigm that disrupts the conventional link between data collection and model training. Employing multi-party computation and model aggregation, federated learning mitigates privacy concerns by keeping data localized. This transformative approach gains further traction in the era of deep neural networks, evolving into what is now known as federated deep learning.At the forefront of this domain is a project that delves into the nuances of federated averaging and its variants, specifically tailored for various text mining tasks. The driving force behind this endeavor is not only the quest for better model fusion but also a commitment to enhancing communication efficiency and personalization.The research project explores the intricacies of federated learning through a series of publications that shed light on the latest developments:      Emerging Trends in Federated Learning: From Model Fusion to Federated X LearningThis comprehensive review surveys the evolving landscape of federated learning, from foundational model fusion to the cutting-edge Federated X Learning.        Dynamic Sampling and Selective Masking for Communication-Efficient Federated LearningA paper introduces innovative techniques such as dynamic sampling and selective masking to enhance communication efficiency in federated learning.        Decentralized Knowledge Acquisition for Mobile Internet ApplicationsA paper explores decentralized knowledge acquisition, a crucial aspect in the realm of mobile internet applications.        Learning Private Neural Language Modeling with Attentive AggregationThis paper delves into the intricacies of learning private neural language modeling, incorporating attentive aggregation for heightened model fusion.        A PyTorch Implementation of Federated LearningAs a testament to the commitment to open-source collaboration, providing a PyTorch implementation of federated learning, available on Zenodo [Link].  As the world witnesses the fusion of federated learning and deep neural networks, the project under discussion stands as a beacon in the exploration of federated deep learning’s potential. With a keen focus on addressing privacy concerns in real-world applications and effective model fusion of neural networks, the research not only advances the field but also fosters a commitment to transparency through open-source implementations.Publications[1] Emerging Trends in Federated Learning: From Model Fusion to Federated X Learning. Shaoxiong Ji, Teemu Saravirta, Shirui Pan, Guodong Long, and Anwar Walid. arXiv preprint arXiv:2102.12920, 2021.[2] Dynamic Sampling and Selective Masking for Communication-Efficient Federated Learning. Shaoxiong Ji, Wenqi Jiang, Anwar Walid, and Xue Li. IEEE Intelligent Systems, 2021.[3] Decentralized Knowledge Acquisition for Mobile Internet Applications. Jing Jiang, Shaoxiong Ji, and Guodong Long. World Wide Web, 2020.[4] Learning Private Neural Language Modeling with Attentive Aggregation. Shaoxiong Ji, Shirui Pan, Guodong Long, Xue Li, Jing Jiang, and Zi Huang. In Proceedings of the 2019 International Joint Conference on Neural Networks (IJCNN), 2019.[5] Shaoxiong Ji. (2018). A PyTorch Implementation of Federated Learning. Zenodo.  Feature Photo by dylan nolte on Unsplash"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Suicidal Ideation Detection in Online Social Content",
+                            "category" : "",
+                            "tags"     : " Projects, Suicidal Ideation Detection",
+                            "url"      : "/projects/2020-02-10-suicidal-ideation-detection",
+                            "date"     : "February 10, 2020",
+                            "excerpt"  : "",
+                            "content"  : "Suicide has emerged as a critical social health concern in contemporary society, with suicidal ideation representing individuals’ thoughts about self-harm. Factors like prolonged exposure to negative emotions or life events can contribute to these thoughts and suicide attempts. Among various suicide prevention strategies, early detection of suicidal ideation proves highly effective. The prevalence of online communication and social networking platforms offers an avenue for individuals to express their struggles and emotions, presenting an opportunity for the early detection of suicidal ideation. This project focuses on investigating online social content for the early identification of suicidal ideation.    Your browser does not support the video tag.User-generated content, particularly text posted by users, contains valuable information about individuals’ well-being and mental states. The project begins with a comprehensive content analysis to extract knowledge from suicide-related text, employing benchmarking for binary classification of suicidal ideation. This includes using feature extraction-based classifiers and deep neural networks. Recognizing the complexity of suicide motives and the variability of suicidal factors among individuals, the project integrates sentimental clues and topics from user posts. It proposes understanding the relations between these factors and posts through attention relation networks for nuanced suicidal ideation detection. The project also delves into suicidal ideation detection within private chatting scenarios. Addressing the challenge of isolated data in private chat rooms, a knowledge transfer framework is developed to train a global model for knowledge sharing among distributed agents.In summary, the urgent need for early detection of suicidal ideation for suicide prevention is paramount. This project employs content analysis, feature engineering, and deep learning techniques, including deep neural networks, attentive relation networks, and federated transfer learning. The aim is to effectively detect suicidal ideation and ultimately prevent suicides, saving lives.PublicationsSuicidal Ideation Detection in Online Social Content.  Shaoxiong Ji.Master of Philosophy, The University of Queensland. 2020. Suicidal Ideation Detection: A Review of Machine Learning Methods and Applications.  Shaoxiong Ji, Shirui Pan, Xue Li, Erik Cambria, Guodong Long, and Zi Huang.IEEE Transactions on Computational Social Systems, 2021. Suicidal Ideation and Mental Disorder Detection with Attentive Relation Networks.Shaoxiong Ji, Xue Li, Zi Huang, and Erik Cambria. Neural Computing and Applications, 2021.  Knowledge Transferring via Model Aggregation for Online Social Care.   Shaoxiong Ji, Guodong Long, Shirui Pan, Tianqing Zhu, Jing Jiang, Sen Wang, and Xue Li. arXiv preprint arXiv:1905.07665, 2019. Detecting Suicidal Ideation with Data Protection in Online Communities.Shaoxiong Ji, Guodong Long, Shirui Pan, Tianqing Zhu, Jing Jiang, and Sen Wang.24th International Conference on Database Systems for Advanced Applications (DASFAA), 2019. Supervised Learning for Suicidal Ideation Detection in Online User Content. Shaoxiong Ji, Celina Ping Yu, Sai-fu Fung, Shirui Pan, and Guodong Long.Complexity, 2018. [Code]Feature Photo by unsplash-logoDan Meyers"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Deep Learning for Medical Code Assignment from Clinical Notes",
+                            "category" : "",
+                            "tags"     : " Projects, Medical Text Processing, Deep Learning",
+                            "url"      : "/projects/2020-03-01-medical-coding",
+                            "date"     : "March 1, 2020",
+                            "excerpt"  : "",
+                            "content"  : "Medical code assignment, which predicts medical codes from clinical texts, is a fundamental task of intelligent medical information systems. The emergence of deep models in natural language processing has boosted the development of automatic assignment methods. This project applies deep learning techniques to improve the performance of automatic medical code assignment. Specifically, we use the International Classification of Diseases (ICD) coding system, maintained by the World Health Organization (WHO).It is challenging to encode lengthy clinical notes with long-term sequential dependency. We propose a Dilated Convolutional Attention Network (DCAN) [1], integrating dilated convolutions, residual connections, and label attention, for medical code assignment. It adopts dilated convolutions to capture complex medical patterns with a receptive field which increases exponentially with dilation size.Capturing the lengthy and rich semantic information of medical notes and explicitly exploiting the interactions between the notes and codes can help medical text understanding and improve medical code prediction.We propose a novel method, gated convolutional neural networks, and a note-code interaction (GatedCNN-NCI) [2], for automatic medical code assignment. Our methods capture the rich semantic information of the lengthy clinical text for better representation by utilizing embedding injection and gated information propagation in the medical note encoding module. With a novel note-code interaction design and a graph message passing mechanism, we explicitly capture the underlying dependency between notes and codes, enabling effective code prediction. A weight sharing scheme is further designed to decrease the number of trainable parameters.Unsupervised pretraining is an integral part of many natural language processing systems, and transfer learning with language models has achieved remarkable results in downstream tasks.In the clinical application of medical code assignment, diagnosis and procedure codes are inferred from lengthy clinical notes such as hospital discharge summaries. However, it is not clear if pretrained models are useful for medical code prediction without further architecture engineering.Our third study conducts a comprehensive quantitative analysis [3] of various contextualized language models’ performances, pretrained in different domains, for medical code assignment from clinical notes.We propose a hierarchical fine-tuning architecture to capture interactions between distant words and adopt label-wise attention to exploit label information. Contrary to current trends, we demonstrate that a carefully trained classical CNN outperforms attention-based models on a MIMIC-III subset with frequent codes.Our empirical findings suggest directions for building robust medical code assignment models.To solve automated medical coding of different coding systems, we propose a multitask recalibrated aggregation network [4]. In particular, multitask learning shares information across different coding schemes and captures the dependencies between different medical codes. Feature recalibration and aggregation in shared modules enhance representation learning for lengthy notes.Publications[1] Ji, S., Cambria, E., &amp; Marttinen, P. (2020). Dilated Convolutional Attention Network for Medical Code Assignment from Clinical Text. Proceedings of ClinicalNLP.[2] Ji, S., Pan, S., &amp; Marttinen, P. (2021). Medical Code Assignment with Gated Convolution and Note-Code Interaction. Findings of ACL-IJCNLP.[3] Ji, S., Hölttä, M., &amp; Marttinen, P. (2021). Does the Magic of BERT Apply to Medical Code Assignment? A Quantitative Study. Computers in Biology and Medicine.[4] Sun, W., Ji, S., Cambria, E., &amp; Marttinen, P. (2021). Multitask Recalibrated Aggregation Network for Medical Code Prediction. ECML-PKDD.[updated on 10 May, 2021.]Photo by Zhen Hu on Unsplash"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Natural Language Processing for Healthcare",
+                            "category" : "",
+                            "tags"     : " Projects, NLP4Health, Medical Text Processing, Deep Learning",
+                            "url"      : "/projects/2022-04-04-nlp-for-healthcare",
+                            "date"     : "March 1, 2020",
+                            "excerpt"  : "",
+                            "content"  : "The emergence of deep learning algorithms in natural language processing has boosted the development of intelligent medical information systems. Firstly, this dissertation explores effective text encoding for clinical text. We propose a dilated convolutional attention network with dilated convolutions to capture complex medical patterns in long clinical notes by exponentially increasing the receptive field with the dilation size. Furthermore, we propose to utilize embedding injection and gated information propagation in the medical note encoding module for better representation learning of the lengthy clinical text. To capture the interaction between notes and codes, we explicitly model the underlying dependency between notes and codes and utilize textual descriptions of medical codes as external knowledge. We also adopt the contextualized graph embeddings to learn contextual information and causal relationships between text mentions such as drugs taken and adverse reactions.We also conduct an empirical analysis on the effectiveness of transfer learning with language model pretraining to clinical text encoding and medical code prediction. We develop a hierarchical encoding model to equip the pretrained language models with the capacity to encode long clinical notes. We further study the effect of pretraining in different domains and with different strategies. The comprehensive quantitative analysis shows that hierarchical encoding can capture interactions between distant words to some extent.Then, this dissertation investigates the multitask learning paradigm and its applications to healthcare. Multitask learning, motivated by human learning from previous tasks to help with a new task, makes full use of the information contained in each task and shares information between related tasks through common parameters. We adopt multitask learning for medical code prediction and demonstrate the benefits of leveraging multiple coding schemes. We design a recalibrated aggregation module to generate clinical document features with better quality and less noise in the shared modules of multitask networks.Finally, we consider the task context to improve multitask learning for healthcare. We propose to use a domain-adaptive pretrained model and hypernetwork-guided multitask heads to learn shared representation modules and task-specific predictors. Specifically, the domain-adaptive pretrained model is directly pretrained in the target domain of clinical applications. Task embeddings as task context are used to generate task-specific parameters with hypernetworks. Experiments show that the proposed hypernetwork-guided multitask learning method can achieve better predictive performance and semantic task information can improve the generalizability of the task-conditioned multitask model.Photo by Zhen Hu on Unsplash"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "Pretrained Language Models for Mental Health",
+                            "category" : "",
+                            "tags"     : " Projects, NLP4Health, Mental Health, Deep Learning",
+                            "url"      : "/projects/2023-12-13-nlp-for-mental-health",
+                            "date"     : "October 13, 2021",
+                            "excerpt"  : "",
+                            "content"  : "In the ever-evolving landscape of NLP for mental health in social content, the intersection of technology and healthcare has opened up new possibilities for early detection and intervention. Recognizing the critical issue of mental health in modern society, this project turns to pretrained language models to address the complexities of mental disorders and suicidal ideation.Mental health disorders, if left untreated, can escalate to severe levels, leading to potentially life-threatening outcomes. Identifying these issues early on is crucial for effective intervention. Recent strides in NLP, particularly pretrained contextualized language representations, have paved the way for innovative solutions in mental healthcare.Utilizing Pretrained Language Models for Mental HealthThis project introduces two novel pretrained masked language models, i.e., MentalBERT and MentalRoBERTa. These models are designed to cater to the unique demands of mental healthcare, offering a potential breakthrough in the early detection of mental disorders and suicidal ideation.Moreover, acknowledging the challenges posed by long-form documents in mental healthcare, the project also presents two efficient transformers: MentalXLNet and MentalLongformer. These models address the limitations of traditional transformers in capturing long-range context, particularly relevant for analyzing lengthy texts such as self-reported mental conditions on platforms like Reddit.The contributions of the project extend beyond model development, not only training and releasing these domain-specific language models but also conducting comprehensive evaluations on various mental healthcare classification datasets. This approach ensures that the models are not just theoretical solutions but are robust and effective in practical applications.Expanding the Scope: Large Language Models in Mental Health AnalysisThe project goes on to explore the capabilities of large language models (LLMs), such as ChatGPT, in automating mental health analysis. While acknowledging the strengths of LLMs, the study identifies several limitations in existing research, including inadequate evaluations, lack of prompting strategies, and a disregard for exploring LLMs for self-explanation generation.The results indicate that ChatGPT exhibits strong in-context learning ability but still falls short compared to advanced task-specific methods. However, with careful prompt engineering, including emotional cues and expert-written few-shot examples, ChatGPT demonstrates a significant improvement in performance on mental health analysis.Pretrained language models, e.g., MentalBERT, MentalRoBERTa, MentalXLNet, and MentalLongformer, offer tailored solutions for mental health analysis, while the evaluation of large language models like ChatGPT opens new avenues for automated mental health assessment. As technology continues to advance, the collaboration between artificial intelligence and mental healthcare holds the potential to revolutionize the way we approach and address mental health challenges in the modern world.Join in the DiscussionJoin in our discord server for further information, discussions, and collaborations as we strive to revolutionize mental healthcare with cutting-edge AI technology.Photo by Zhen Hu on Unsplash"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "High-Performance Language Technologies",
+                            "category" : "",
+                            "tags"     : " Projects, Language Technology, Large Language Models, Machine Translation, Deep Learning",
+                            "url"      : "/projects/2023-01-01-hplt",
+                            "date"     : "January 1, 2023",
+                            "excerpt"  : "",
+                            "content"  : "In the dynamic landscape of language and translation modeling, the High Performance Language Technologies project (HPLT) emerges as a groundbreaking initiative set to redefine the boundaries of possibility. Launched in September 2022 and funded by the European Union, HPLT aims to create the most extensive collection of free and reproducible language models and datasets for approximately 100 languages. This ambitious undertaking involves harnessing the power of high-performance computing (HPC) and utilizing web-crawled data to build efficient, sustainable, and reusable workflows for language and translation models.HPLT’s vision encompasses the creation of a space where petabytes of natural language data converge with large-scale model training. Drawing inspiration from sources like the Internet Archive and CommonCrawl, the project aims to derive both monolingual and bilingual datasets. This commitment to diversity in language coverage sets HPLT apart, promising a significant impact on the multilingual landscape. By consistently formatting and curating this vast array of data, the project paves the way for a revolution in language and translation modeling.Efficiency and high quality stand as pillars of HPLT’s objectives. The project seeks to build robust machine translation and language models that not only meet the demands of a diverse linguistic landscape but also exceed expectations in terms of performance. The incorporation of high-performance computing in the modeling process ensures that these language models are not only powerful but also efficient, capable of handling large quantities of data with precision.One of HPLT’s distinctive features is its unwavering commitment to sustainability and reusability. By constructing workflows that leverage high-performance computing, the project aims to provide free, sustainable, and reusable datasets, models, and workflows at a scale never seen before. HPLT envisions a future where language and translation models contribute to the global knowledge commons, fostering collaborative innovation and eliminating barriers to access.In the spirit of openness, HPLT is dedicated to sharing its findings with the global community. The project aims to publish its results in a shared space, accompanied by open licenses. This commitment to transparency and collaboration ensures that the advancements made by HPLT benefit researchers, developers, and language enthusiasts worldwide.Explore the groundbreaking innovations in language and translation technology by visiting the official HPLT project website: https://hplt-project.org.Photo by Ramón Salinero on Unsplash"
+                         
+                       } ,
+                     
+                       {
+                         
+                            "title"    : "MaLA - Massive Language Adaptation of Large Language Models",
+                            "category" : "",
+                            "tags"     : " Projects, Language Technology, Large Language Models, Multilingual NLP",
+                            "url"      : "/projects/2023-07-01-mala",
+                            "date"     : "January 1, 2023",
+                            "excerpt"  : "",
+                            "content"  : "MaLA-LM focuses on adapting large language models to support hundreds of languages, including many underrepresented ones. Our models are multilingual, scalable, and optimized for diverse linguistic tasks. Explore our models on Hugging Face.Featured 🗣️Check out our multilingual LLM collections, featuring models trained to handle 500+ languages, ideal for global, multilingual applications.EMMA-500EMMA-500 is a state-of-the-art multilingual language model designed to improve language representation, especially in low-resource languages, through continual pre-training on the Llama 2 7B architecture. Leveraging the MaLA Corpus, which spans over 500 languages and 74 billion tokens, EMMA-500 excels in multilingual tasks like commonsense reasoning, machine translation, open-ended generation, and text classification.EMMA-500 outperforms other Llama 2-based models in diverse multilingual settings while maintaining robustness in specialized tasks.MaLA corpusThe MaLA Corpus (Massive Language Adaptation) is a comprehensive, multilingual dataset designed to support the continual pre-training of large language models. It covers 939 languages and consists of over 74 billion tokens, making it one of the largest datasets of its kind. With a focus on improving the representation of low-resource languages, the MaLA Corpus is a critical resource for advancing multilingual models, particularly those aimed at serving underrepresented languages.  Language Coverage: Includes data for 939 languages, with 546 languages having over 100,000 tokens.  Pre-processing: The corpus is cleaned and deduplicated to ensure high-quality training data.MaLA-500MaLA-500 is a novel large language model designed to cover an extensive range of 534 languages. This model builds upon LLaMA 2 7B and integrates continued pretraining with vocabulary extension, with an expanded vocabulary size of 260,164, and LoRA low-rank adaptation.  Continued Pretraining: Enhances the model’s ability to adapt to a wide range of languages.  LoRA Low-Rank Adaptation: LoRA low-rank adaptation refines the model’s adaptation capabilities.  Vocabulary Extension: MaLA-500 boasts an extended vocabulary size of 260,164.  Multilingual Proficiency: Trained on Glot500-c, covering 534 languages.With vocabulary extension and LoRA modules, the MaLA-500 introduces additional 2.1B trainable parameters, making the total parameters to be 10.7B.Connect with Us on DiscordFor those interested in joining the conversation or learning more about the project, you can connect with the community on Discord: MaLA-LM Discord."
+                         
+                       } 
+                     
+                    
+                  ],
+            searchResultTemplate: '<div class="search-title"><a href="{url}"><h3> {title}</h3></a><div class="meta">{date} <div class="right"><i class="fa fa-tag"></i> {tags}</div></div><p>{excerpt}</p></div><hr> ',
+            noResultsText: 'No results found',
+            limit: 10,
+            fuzzy: false,
+            exclude: []
+        })
+    </script>
+</section>
+</section>
+
+  <!-- Tag list for projects -->
+  
+  
+
+
+<footer>
+  <div class="tag-list"></div>
+</footer>
+
+
+</article>
+
+<style>
+    .top-scrollerx {
+    position: fixed;
+        bottom: 100px;
+        right: 10px;
+        font-size: 1em;
+        display: none;
+        z-index: 999;
+        text-align: center;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        background: rgba(0,0,0,.35);
+        color: #fff;
+        line-height: 40px;
+    
+    }
+     .top-scrollerx:hover {
+        background: rgba(0,0,0,.6);
+    }
+    </style>
+    <div class="top-scrollerx js-top-scrollerx svg-icons">
+       <svg style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z"></path></svg>
+    </div>
+    <script>
+    $(window).scroll(function(){
+      // console.log('wwww');
+      if ($(this).scrollTop() > 400) {
+        $('.js-top-scrollerx').fadeIn();
+      } else {
+        $('.js-top-scrollerx').fadeOut();
+      }
+    });
+    //Click event to scroll to top
+    $('.js-top-scrollerx').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
+    });
+    
+    </script>
+    </div>
+    
+<footer class="site-footer">
+    <h2 class="section-heading">Let's Get In Touch!</h2>
+    <div class="footer-icons">
+        <ul>
+        <!-- Social icons from Font Awesome, if enabled -->
+        
+<li>
+	<a href="http://localhost:4000/feed.xml" title="Follow RSS feed">
+        <i class="fa fa-rss fa-2x"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:shaoxiong.ji@tu-darmstadt.de" title="Email">
+        <i class="fa fa-envelope fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/shaoxiongji" title="Follow on GitHub">
+        <i class="fa fa-github fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/shaoxiongji/" title="Follow on LinkedIn">
+        <i class="fa fa-linkedin fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/shaoxiongji" title="Follow on Twitter" class="type">
+        <i class="fa fa-twitter fa-2x"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+        </ul>
+    </div>
+    <p>Powered by <a href="https://github.com/sylhare/Type-On-Strap">Sylhare</a> based on <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> · © 2018-2021.</p>
+</footer>
+
+
+  </body>
+</html>
