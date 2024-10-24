@@ -5,17 +5,17 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description>Shaoxiong&apos;s Homepage</description>
-        <pubDate>Thu, 24 Oct 2024 21:33:07 +0200</pubDate>
+        <pubDate>Thu, 24 Oct 2024 21:45:13 +0200</pubDate>
         
         <item>
-            <title>Call for Participation SemEval-2025 Task-3 — Mu-SHROOM, the Multilingual Shared-task on Hallucinations and Related Observable Overgeneration Mistakes</title>
+            <title>Call for Participation - SemEval-2025 Task-3 — Mu-SHROOM, the Multilingual Shared-task on Hallucinations and Related Observable Overgeneration Mistakes</title>
             <link>/2024/10/24/mu-shroom.html</link>
             <guid isPermaLink="true">/2024/10/24/mu-shroom.html</guid>
             <description>&lt;h1 id=&quot;简要说明&quot;&gt;简要说明&lt;/h1&gt;
 &lt;p&gt;Mu-SHROOM（中文名：魔幻菇）是一项不以英语为中心的SemEval2025共享任务，该项任务的目的是推进在LLM生成的内容的幻觉检测方面的前沿研究。我们已经对由大语言模型生成的 10 种不同语言的幻觉内容进行了标注。您可以通过准确识别幻觉内容的在段落中的范围来参与我们的工作，不限语言。欢迎加入我们的 Google 群组和/或 Slack，随时了解最新信息！&lt;/p&gt;
 
 &lt;h1 id=&quot;参赛和投稿邀请&quot;&gt;参赛和投稿邀请&lt;/h1&gt;
-&lt;p&gt;我们非常高兴地宣布 Mu-SHROOM 幻觉检测共享任务（https://helsinki-nlp.github.io/shroom/2024）。我们邀请参与者在多语言环境中检测经过指令调整的 LLM 输出中的幻觉跨度。&lt;/p&gt;
+&lt;p&gt;我们非常高兴地宣布 &lt;a href=&quot;https://helsinki-nlp.github.io/shroom/2024&quot;&gt;Mu-SHROOM 幻觉检测共享任务&lt;/a&gt;。我们邀请参与者在多语言环境中检测经过指令调整的 LLM 输出中的幻觉跨度。&lt;/p&gt;
 
 &lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
 &lt;p&gt;这项共享任务建立在我们之前的迭代版本 SHROOM 的基础上，有三项关键改进： 以大语言模型为中心、多语言标注和幻觉跨度预测。&lt;/p&gt;
@@ -52,7 +52,7 @@ SemEval 研讨会： 2025年夏季（与ACL会议同期举行）&lt;/p&gt;
 提交论文：系统说明论文应于 2025 年 2 月 28 日之前提交（待定，详情稍后公布）。&lt;/p&gt;
 
 &lt;h2 id=&quot;想了解最新动态&quot;&gt;想了解最新动态？&lt;/h2&gt;
-&lt;p&gt;加入我们的 Google 群组邮件列表 （https://groups.google.com/g/semeval-2025-task-3-mu-shroom）或 Slack （https://join.slack.com/t/shroom-shared-task/shared_invite/zt-2mmn4i8h2-HvRBdK5f4550YHydj5lpnA）！我们期待着您的参与，并期待着这项任务所带来的激动人心的研究成果。&lt;/p&gt;
+&lt;p&gt;加入我们的 &lt;a href=&quot;https://groups.google.com/g/semeval-2025-task-3-mu-shroom&quot;&gt;Google 群组邮件列表&lt;/a&gt; 或 &lt;a href=&quot;https://join.slack.com/t/shroom-shared-task/shared_invite/zt-2mmn4i8h2-HvRBdK5f4550YHydj5lpnA&quot;&gt;Slack&lt;/a&gt;！我们期待着您的参与，并期待着这项任务所带来的激动人心的研究成果。&lt;/p&gt;
 
 &lt;h1 id=&quot;tldr&quot;&gt;TL;DR&lt;/h1&gt;
 &lt;p&gt;Mu-SHROOM is a non-English-centric SemEval-2025 shared task to advance the SOTA in hallucination detection for content generated with LLMs. We’ve annotated hallucinated content in 10 different languages from top -tier LLMs. Participate in as many languages as you’d like by accurately identifying spans of hallucinated content. Stay informed by joining our  Google group or our Slack or follow our Twitter account!&lt;/p&gt;
