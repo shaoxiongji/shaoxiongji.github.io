@@ -3,9 +3,9 @@
     <channel>
         <title>Home</title>
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-        <link>https://shaoxiongji.github.io/</link>
+        <link>http://localhost:4000/</link>
         <description>Shaoxiong&apos;s Homepage</description>
-        <pubDate>Mon, 06 Jan 2025 18:29:16 +0100</pubDate>
+        <pubDate>Wed, 18 Jun 2025 21:50:17 +0200</pubDate>
         
         <item>
             <title>Call for Participation - SemEval-2025 Task-3 — Mu-SHROOM, the Multilingual Shared-task on Hallucinations and Related Observable Overgeneration Mistakes</title>
@@ -231,8 +231,8 @@ Following the emerging trends, we also discuss federated learning in the interse
 This survey reviews related state of the art, challenges, and future directions.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;https://shaoxiongji.github.io/img/posts/fedx.svg&quot; /&gt;&lt;br /&gt;
-  &lt;i&gt;Federated learning with other learning algorithms: categorization, conjunctions and representative methods. &lt;a href=&quot;https://shaoxiongji.github.io/img/posts/fedx.svg&quot;&gt;[View SVG]&lt;/a&gt; &lt;/i&gt;
+  &lt;img src=&quot;http://localhost:4000/img/posts/fedx.svg&quot; /&gt;&lt;br /&gt;
+  &lt;i&gt;Federated learning with other learning algorithms: categorization, conjunctions and representative methods. &lt;a href=&quot;http://localhost:4000/img/posts/fedx.svg&quot;&gt;[View SVG]&lt;/a&gt; &lt;/i&gt;
 &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -307,7 +307,7 @@ Journals: computational linguistics and data mining(TACL, TKDE, TNNLS, etc.), he
 
 &lt;h2 id=&quot;writing&quot;&gt;Writing&lt;/h2&gt;
 &lt;p&gt;Academic writing is not easy. 
-I recommend to check out some nice references for academic writing for computer science, for instance, instructions from &lt;a href=&quot;http://www.cs.toronto.edu/~miller/Research/writing.html&quot;&gt;Renée J. Miller&lt;/a&gt;, &lt;a href=&quot;https://www.cs.rit.edu/~rlaz/writing.html&quot;&gt;Richard Zanibbi&lt;/a&gt;, and &lt;a href=&quot;https://shaoxiongji.github.io/2021/04/25/practical-tips-for-writing-academic-articles.html&quot;&gt;my personal collection of references for scientific writing&lt;/a&gt;.&lt;/p&gt;
+I recommend to check out some nice references for academic writing for computer science, for instance, instructions from &lt;a href=&quot;http://www.cs.toronto.edu/~miller/Research/writing.html&quot;&gt;Renée J. Miller&lt;/a&gt;, &lt;a href=&quot;https://www.cs.rit.edu/~rlaz/writing.html&quot;&gt;Richard Zanibbi&lt;/a&gt;, and &lt;a href=&quot;http://localhost:4000/2021/04/25/practical-tips-for-writing-academic-articles.html&quot;&gt;my personal collection of references for scientific writing&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Some quick tips:&lt;/p&gt;
 &lt;ul&gt;
@@ -389,7 +389,7 @@ For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC,
 
 &lt;p&gt;This paper proposes a novel structure for tightly covering a given set of time series under the dynamic time warping similarity measurement. The structure, referred to as Dynamic Covering with cross-Range Constraints (DCRC), enables more efficient and scalable indexing to be developed than current hypercube based partitioning approaches. In particular, a lower bound of the DTW distance from a given query time series to a DCRC-based cover set is introduced. By virtue of its tightness, which is proven theoretically, the lower bound can be used for pruning when querying on an indexing tree. If the DCRC based Lower Bound (LB_DCRC) of an upper node in an index tree is larger than a given threshold, all child nodes can be pruned yielding a significant reduction in computational time. A Hierarchical DCRC (HDCRC) structure is proposed to generate the DCRC-tree based indexing and used to develop time series indexing and insertion algorithms. Experimental results for a selection of benchmark time series datasets are presented to illustrate the tightness of LB_DCRC, as well as the pruning efficiency on the DCRC-tree, especially when the time series have large deformations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://shaoxiongji.github.io/img/posts/ts-HDCRC.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/posts/ts-HDCRC.png&quot; alt=&quot;&quot; /&gt;
 &lt;em&gt;&lt;center&gt;Fig. Illustration of Hierarchical DCRC with two layers&lt;/center&gt;&lt;/em&gt;
 &lt;br /&gt;&lt;/p&gt;
 
@@ -404,7 +404,7 @@ For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC,
 
 &lt;p&gt;&lt;strong&gt;Time Series Indexing By Dynamic Covering with Cross-Range Constraints.&lt;/strong&gt;  &lt;br /&gt;
 &lt;em&gt;Tao Sun, Hongbo Liu, Seán McLoone, Shaoxiong Ji, and Xindong Wu&lt;/em&gt;&lt;br /&gt;
-&lt;a href=&quot;https://link.springer.com/article/10.1007/s00778-020-00614-9&quot;&gt;The VLDB Journal&lt;/a&gt;, 2020. [&lt;a href=&quot;https://shaoxiongji.github.io/papers/vldbj20.pdf&quot;&gt;PDF&lt;/a&gt;] [&lt;a href=&quot;https://github.com/shaoxiongji/DCRC&quot;&gt;Code&lt;/a&gt;]&lt;/p&gt;
+&lt;a href=&quot;https://link.springer.com/article/10.1007/s00778-020-00614-9&quot;&gt;The VLDB Journal&lt;/a&gt;, 2020. [&lt;a href=&quot;http://localhost:4000/papers/vldbj20.pdf&quot;&gt;PDF&lt;/a&gt;] [&lt;a href=&quot;https://github.com/shaoxiongji/DCRC&quot;&gt;Code&lt;/a&gt;]&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;
@@ -422,7 +422,7 @@ For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC,
 &lt;p&gt;Federated learning learns a shared global model by the aggregation of local models on client devices. But simple federated averaging only uses a simple average on client models, ignoring the contributions of different models. For example, in the mobile keyboard applications, language preferences may vary from individual to individual. The contributions of client language models to the central server are quite different. To learn a generalized model that can be quickly adapted to different people’s patterns and preferences, knowledge transferring between server and client, especially the well-trained clients models, should be considered.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;https://shaoxiongji.github.io/img/posts/paper-fed-att-aggregation.png&quot; /&gt;&lt;br /&gt;
+  &lt;img src=&quot;http://localhost:4000/img/posts/paper-fed-att-aggregation.png&quot; /&gt;&lt;br /&gt;
   &lt;i&gt;Fig 1. Aggregation with the consideration of model importance&lt;/i&gt;
 &lt;/p&gt;
 
@@ -432,7 +432,7 @@ For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC,
 The advantages of our proposed method are: 1) it considers the relation between the server model and client models and their weights, and 2) it optimizes the distance between the server model and client models in parameter space to learn a well-generalized server model.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;https://shaoxiongji.github.io/img/posts/paper-fed-att-method.png&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
+  &lt;img src=&quot;http://localhost:4000/img/posts/paper-fed-att-method.png&quot; width=&quot;50%&quot; /&gt;&lt;br /&gt;
   &lt;i&gt;Fig 2. Attentive Federated Learning&lt;/i&gt;
 &lt;/p&gt;
 
@@ -458,7 +458,7 @@ We choose GRU as the local learner because it is a simple RNN variant with less 
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;a href=&quot;/img/posts/feat-alibaba.jpg&quot;&gt;Feature image&lt;/a&gt; was token by &lt;a href=&quot;https://shaoxiongji.github.io&quot;&gt;Shaoxiong Ji&lt;/a&gt; in &lt;a href=&quot;https://www.google.com/maps/place/Alibaba+Xixi+Park+%EF%BC%88West+Gate%EF%BC%89/@30.27875,120.02192,17z/data=!4m12!1m6!3m5!1s0x344b64d934be07af:0x63bb414ca9d4b581!2sAlibaba+Xixi+Park+%EF%BC%88South+Gate%EF%BC%89!8m2!3d30.276996!4d120.024338!3m4!1s0x0:0x459bed85621bde90!8m2!3d30.2787497!4d120.0219199&quot;&gt;Alibaba Xixi Park, Hangzhou, Zhejiang, China&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/img/posts/feat-alibaba.jpg&quot;&gt;Feature image&lt;/a&gt; was token by &lt;a href=&quot;http://localhost:4000&quot;&gt;Shaoxiong Ji&lt;/a&gt; in &lt;a href=&quot;https://www.google.com/maps/place/Alibaba+Xixi+Park+%EF%BC%88West+Gate%EF%BC%89/@30.27875,120.02192,17z/data=!4m12!1m6!3m5!1s0x344b64d934be07af:0x63bb414ca9d4b581!2sAlibaba+Xixi+Park+%EF%BC%88South+Gate%EF%BC%89!8m2!3d30.276996!4d120.024338!3m4!1s0x0:0x459bed85621bde90!8m2!3d30.2787497!4d120.0219199&quot;&gt;Alibaba Xixi Park, Hangzhou, Zhejiang, China&lt;/a&gt;.&lt;/p&gt;
 </description>
             <pubDate>Thu, 11 Jul 2019 00:00:00 +0200</pubDate>
         </item>
@@ -470,7 +470,7 @@ We choose GRU as the local learner because it is a simple RNN variant with less 
             <description>&lt;p&gt;The launch event of ARC Linkage Project, namely interaction mining for cyberbullying detection on social networks, is held in UTS in 1st Dec, 2017.
 This project is with four collaborators organizations, i.e., GBCA (Global Business College Australia), ARACY (Australia Research Alliance for Children &amp;amp; Youth), UQ (University of Queensland) and UTS (University of Technology Sydney). This collaboration is expected to increase technical capability for advanced data science application and build tools for social science researcher and psychologist in assisting them to effective detect cyberbullying activities and prevent the potential mental health damage of victims.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://shaoxiongji.github.io/img/posts/arc-lp15.png&quot; alt=&quot;ARC linkage project&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/img/posts/arc-lp15.png&quot; alt=&quot;ARC linkage project&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;There are three student representations in this launch event as follow:&lt;/p&gt;
 &lt;ul&gt;
