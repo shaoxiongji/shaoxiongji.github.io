@@ -5,7 +5,7 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description>Shaoxiong&apos;s Homepage</description>
-        <pubDate>Tue, 09 Sep 2025 09:41:51 +0200</pubDate>
+        <pubDate>Sat, 25 Oct 2025 11:51:43 +0300</pubDate>
         
         <item>
             <title>Call for Participation - SemEval-2025 Task-3 — Mu-SHROOM, the Multilingual Shared-task on Hallucinations and Related Observable Overgeneration Mistakes</title>
@@ -101,7 +101,7 @@ Join our &lt;a href=&quot;（https://groups.google.com/g/semeval-2025-task-3-mu-
 Raúl Vázquez and Timothee Mickus 
 On behalf of all the Mu-SHROOM organizers&lt;/p&gt;
 </description>
-            <pubDate>Thu, 24 Oct 2024 00:00:00 +0200</pubDate>
+            <pubDate>Thu, 24 Oct 2024 00:00:00 +0300</pubDate>
         </item>
         
         <item>
@@ -121,7 +121,7 @@ I acknowledge the computational resources provided by the Aalto Science-IT proje
 I would like to thank the Nokia Foundation for granting the Nokia Scholarship to support my research and the ELISE Mobility Program, Finnish Center for Artificial Intelligence (FCAI), and Foundation for Aalto University Science and Technology for providing a travel grant to support my visiting research. 
 Finally, I would like to thank my family and friends for their support in my PhD journey.&lt;/p&gt;
 </description>
-            <pubDate>Fri, 01 Apr 2022 00:00:00 +0200</pubDate>
+            <pubDate>Fri, 01 Apr 2022 00:00:00 +0300</pubDate>
         </item>
         
         <item>
@@ -216,7 +216,7 @@ PS: be cautious about potential errors in the auto-generated bib items.&lt;/p&gt
 &lt;/ol&gt;
 
 </description>
-            <pubDate>Sun, 25 Apr 2021 00:00:00 +0200</pubDate>
+            <pubDate>Sun, 25 Apr 2021 00:00:00 +0300</pubDate>
         </item>
         
         <item>
@@ -260,8 +260,12 @@ S. Ji, T. Saravirta, S. Pan, G. Long, and A. Walid.&lt;br /&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span&gt;Feature Photo by &lt;a href=&quot;https://unsplash.com/@dylan_nolte?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;dylan nolte&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/photos/wYEj-xonKcg&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 </description>
-            <pubDate>Fri, 26 Feb 2021 00:00:00 +0100</pubDate>
+            <pubDate>Fri, 26 Feb 2021 00:00:00 +0200</pubDate>
         </item>
         
         <item>
@@ -371,7 +375,7 @@ For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC,
 &lt;p&gt;I hope this may help. Please keep reading and begin to write whatever you can. You never know what’s gone happen unless you start to write something. Enjoy your writing!&lt;/p&gt;
 
 </description>
-            <pubDate>Wed, 07 Oct 2020 00:00:00 +0200</pubDate>
+            <pubDate>Wed, 07 Oct 2020 00:00:00 +0300</pubDate>
         </item>
         
         <item>
@@ -410,7 +414,7 @@ For heavy jobs, I will invite you to the CSC cluster (optional). If you use CSC,
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 </description>
-            <pubDate>Mon, 25 May 2020 00:00:00 +0200</pubDate>
+            <pubDate>Mon, 25 May 2020 00:00:00 +0300</pubDate>
         </item>
         
         <item>
@@ -460,7 +464,7 @@ We choose GRU as the local learner because it is a simple RNN variant with less 
 
 &lt;p&gt;&lt;a href=&quot;/img/posts/feat-alibaba.jpg&quot;&gt;Feature image&lt;/a&gt; was token by &lt;a href=&quot;http://localhost:4000&quot;&gt;Shaoxiong Ji&lt;/a&gt; in &lt;a href=&quot;https://www.google.com/maps/place/Alibaba+Xixi+Park+%EF%BC%88West+Gate%EF%BC%89/@30.27875,120.02192,17z/data=!4m12!1m6!3m5!1s0x344b64d934be07af:0x63bb414ca9d4b581!2sAlibaba+Xixi+Park+%EF%BC%88South+Gate%EF%BC%89!8m2!3d30.276996!4d120.024338!3m4!1s0x0:0x459bed85621bde90!8m2!3d30.2787497!4d120.0219199&quot;&gt;Alibaba Xixi Park, Hangzhou, Zhejiang, China&lt;/a&gt;.&lt;/p&gt;
 </description>
-            <pubDate>Thu, 11 Jul 2019 00:00:00 +0200</pubDate>
+            <pubDate>Thu, 11 Jul 2019 00:00:00 +0300</pubDate>
         </item>
         
         <item>
@@ -514,8 +518,12 @@ Third, it evaluate the impact of sentences of the social workers might enter to 
 &lt;hr /&gt;
 
 &lt;p&gt;Feature Photo by &lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@dmey503?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from Dan Meyers&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;Dan Meyers&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 </description>
-            <pubDate>Sat, 02 Dec 2017 00:00:00 +0100</pubDate>
+            <pubDate>Sat, 02 Dec 2017 00:00:00 +0200</pubDate>
         </item>
         
     </channel>
