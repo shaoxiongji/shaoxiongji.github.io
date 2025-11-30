@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,7 +20,7 @@
     <link rel="canonical" href="http://localhost:4000/blogs/page2/">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000///feed.xml"/>
+    <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000/feed.xml"/>
 
     <!-- Font Awesome -->
 
@@ -28,14 +28,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
     <!-- Google Fonts -->
     
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css"> 
     
 
     <!-- KaTeX 0.8.3 -->
@@ -47,31 +46,20 @@
     </script>
     
 
-    <!-- Google Analytics -->
+    <!-- Google Analytics 4 -->
     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LHSMW4F3Y"></script>
     <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-111329602-1', 'auto');
-        ga('send', 'pageview');
-
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5LHSMW4F3Y');
     </script>
     
     
     <!-- Manual seo tags -->
     <title> Shaoxiong Ji</title>
     <meta name="description" content="Shaoxiong's Homepage">
-    <link href=”http://shaoxiongji.github.io/” rel=”canonical” />
     <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
     <meta name="author" content="Shaoxiong Ji">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,13 +70,13 @@
     <!-- Title -->
 	<div class="branding">
 		<h1 class="site-title">
-			<a href="https://shaoxiongji.github.io">Home</a>
+			<a href="http://localhost:4000/">Home</a>
 		</h1>
 	</div>
 
     <!-- Toggle menu -->
     <nav class="clear navbar-fixed-top">
-    <a id="pull" class="toggle" href="#">
+    <a id="pull" class="toggle" href="#" aria-label="Toggle navigation menu">
     <i class="fa fa-bars fa-lg"></i>
     </a>
 
@@ -162,7 +150,7 @@
             |
         </li>
         <li>
-            <a class="clear" href="https://shaoxiongji.github.io/blogs/">
+            <a class="clear" href="http://localhost:4000/blogs/">
                 Blogs
             </a>
         </li>
@@ -173,7 +161,7 @@
             |
         </li>
         <li>
-            <a class="clear" href="https://shaoxiongji.github.io/projects/">
+            <a class="clear" href="http://localhost:4000/projects/">
                 Projects
             </a>
         </li>
@@ -184,7 +172,7 @@
 						|
 				</li>
 				<li>
-						<a class="clear" href="https://shaoxiongji.github.io/talks/">
+						<a class="clear" href="http://localhost:4000/talks/">
 								Talks
 						</a>
 				</li>
@@ -195,7 +183,7 @@
             |
         </li>
         <li>
-            <a class="clear" href="https://shaoxiongji.github.io/search">
+            <a class="clear" href="http://localhost:4000/search">
                 <i class="fa fa-search" aria-hidden="true"></i>
             </a>
         </li>
@@ -205,7 +193,7 @@
             |
         </li>
         <li>
-            <a class="clear" href="https://shaoxiongji.github.io/tags">
+            <a class="clear" href="http://localhost:4000/tags">
                 <i class="fa fa-tags" aria-hidden="true"></i>
             </a>
         </li>
@@ -228,11 +216,11 @@
 <div class="row">
     <div class="column-38">
         <div id="profile">
-            <img class="portrait" src="img/people/sji.jpeg">
+            <img class="portrait" src="img/people/sji.jpeg" alt="Portrait of Shaoxiong Ji">
             <div class="name">Shaoxiong Ji</div>
             <div class="affiliation"> 
                 Principal Investigator, <a href="https://www.ellisinstitute.fi">ELLIS Institute Finland</a> <br />
-                Assistant Professor, <a href="https://www.utu.fi/en/university/faculty-of-technology/computing">Department of Computer Science</a> <br />       
+                Assistant Professor, <a href="https://www.utu.fi/en/university/faculty-of-technology/computing">Department of Computing</a> <br />       
                 <a href="https://www.utu.fi/en">University of Turku, Finland</a> <br /> 
             </div>
 
@@ -287,13 +275,13 @@
         <div class="row">
             <br>
             <br>
-            <p class="introduction">Shaoxiong <audio id="player" src="https://shaoxiongji.github.io/assets/audio/shaoxiong.mp3"></audio>
-                <a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up fa-lg'></i></a> is a principal investigator at ELLIS Institute Finland and an assistant professor at University of Turku, Finland. Prior to this, he was an independent research group leader at Technical University of Darmstadt, and a postdoctoral researcher at the University of Helsinki, working on high-performance language technology. He did his Ph.D. at Aalto University. Previously, he worked as a research assistant or visiting scholar at University of Technology Sydney (UTS), The University of Queensland (UQ), Nanyang Technological University (NTU), Finnish Institute for Health and Welfare (THL), University of Munich (LMU), and Shanghai AI Lab.
-                <a class="home-link" href="about/">[MORE]</a>
+            <p class="introduction">Shaoxiong <audio id="player" src="http://localhost:4000/assets/audio/shaoxiong.mp3"></audio>
+                <a onclick="document.getElementById('player').play()" aria-label="Play pronunciation of name"><i class='fa fa-volume-up fa-lg'></i></a> is a principal investigator at ELLIS Institute Finland and an assistant professor at University of Turku, Finland. Prior to this, he was an independent research group leader at Technical University of Darmstadt, and a postdoctoral researcher at the University of Helsinki, working on high-performance language technology. He did his Ph.D. at Aalto University. Previously, he worked as a research assistant or visiting scholar at University of Technology Sydney (UTS), The University of Queensland (UQ), Nanyang Technological University (NTU), Finnish Institute for Health and Welfare (THL), University of Munich (LMU), and Shanghai AI Lab.
+                <a class="home-link" href="/about/">[MORE]</a>
             </p>
             <p class="introduction">  
 
-            <strong>We welcome <a class="home-link" href="https://shaoxiongji.github.io/msc_thesis/">Master's students who are looking for thesis opportunities</a> and <a class="home-link" href="https://shaoxiongji.github.io/visiting_researcher"> visiting students and researchers</a> in NLP and related fields to work with us. </strong> 
+            <strong>We welcome <a class="home-link" href="http://localhost:4000/msc_thesis/">Master's students who are looking for thesis opportunities</a> and <a class="home-link" href="http://localhost:4000/visiting_researcher"> visiting students and researchers</a> in NLP and related fields to work with us. </strong> 
             </p>
         </div>
         
