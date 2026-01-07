@@ -5,7 +5,7 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description>Shaoxiong&apos;s Homepage</description>
-        <pubDate>Wed, 07 Jan 2026 11:13:08 +0200</pubDate>
+        <pubDate>Wed, 07 Jan 2026 11:31:36 +0200</pubDate>
         
         <item>
             <title>Call for Participation - PsyDefDetect shared task (co-located with BioNLP @ ACL 2026)</title>
@@ -15,15 +15,13 @@
 
 &lt;p&gt;Grounded in the clinically validated Defense Mechanism Rating Scales (DMRS) framework, this shared task aims to advance the understanding of unconscious defensive functioning in text.&lt;/p&gt;
 
-&lt;p&gt;Shared task website: https://psydefdetect-shared-task.github.io/&lt;/p&gt;
-
-&lt;p&gt;Discord server: https://discord.com/invite/AhuspeXNkM&lt;/p&gt;
-
-&lt;p&gt;Google group: https://groups.google.com/g/psydefdetect&lt;/p&gt;
-
-&lt;p&gt;RedNote: https://xhslink.com/m/34ddMoz7E4L&lt;/p&gt;
-
-&lt;p&gt;Evaluation Platform (Codabench): https://www.codabench.org/competitions/12124/&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Shared task website: &lt;a href=&quot;https://psydefdetect-shared-task.github.io/&quot;&gt;https://psydefdetect-shared-task.github.io/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Discord server: &lt;a href=&quot;https://discord.com/invite/AhuspeXNkM&quot;&gt;https://discord.com/invite/AhuspeXNkM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Google group: &lt;a href=&quot;https://groups.google.com/g/psydefdetect&quot;&gt;https://groups.google.com/g/psydefdetect&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;RedNote: &lt;a href=&quot;https://xhslink.com/m/34ddMoz7E4L&quot;&gt;https://xhslink.com/m/34ddMoz7E4L&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Evaluation Platform (Codabench): &lt;a href=&quot;https://www.codabench.org/competitions/12124/&quot;&gt;https://www.codabench.org/competitions/12124/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;task-overview&quot;&gt;Task Overview&lt;/h1&gt;
 
@@ -61,17 +59,27 @@
 
 &lt;h1 id=&quot;organizers&quot;&gt;Organizers&lt;/h1&gt;
 
-&lt;p&gt;Hongbin Na, University of Technology Sydney
-Zimu Wang, Xi’an Jiaotong-Liverpool University
-Zhaoming Chen, University of Utah
-Yining Hua, Harvard University
-Rena Gao, The University of Melbourne
-Kailai Yang, The University of Manchester
-Ling Chen, University of Technology Sydney
-Wei Wang, Xi’an Jiaotong-Liverpool University
-Shaoxiong Ji, ELLIS Institute Finland &amp;amp; University of Turku
-John Torous, Harvard University
-Sophia Ananiadou, The University of Manchester &amp;amp; ELLIS Manchester&lt;/p&gt;
+&lt;p&gt;Hongbin Na, University of Technology Sydney&lt;/p&gt;
+
+&lt;p&gt;Zimu Wang, Xi’an Jiaotong-Liverpool University&lt;/p&gt;
+
+&lt;p&gt;Zhaoming Chen, University of Utah&lt;/p&gt;
+
+&lt;p&gt;Yining Hua, Harvard University&lt;/p&gt;
+
+&lt;p&gt;Rena Gao, The University of Melbourne&lt;/p&gt;
+
+&lt;p&gt;Kailai Yang, The University of Manchester&lt;/p&gt;
+
+&lt;p&gt;Ling Chen, University of Technology Sydney&lt;/p&gt;
+
+&lt;p&gt;Wei Wang, Xi’an Jiaotong-Liverpool University&lt;/p&gt;
+
+&lt;p&gt;Shaoxiong Ji, ELLIS Institute Finland &amp;amp; University of Turku&lt;/p&gt;
+
+&lt;p&gt;John Torous, Harvard University&lt;/p&gt;
+
+&lt;p&gt;Sophia Ananiadou, The University of Manchester &amp;amp; ELLIS Manchester&lt;/p&gt;
 </description>
             <pubDate>Wed, 07 Jan 2026 00:00:00 +0200</pubDate>
         </item>
