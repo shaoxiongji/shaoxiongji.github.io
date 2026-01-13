@@ -5,7 +5,41 @@
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
         <link>http://localhost:4000/</link>
         <description>Shaoxiong&apos;s Homepage</description>
-        <pubDate>Wed, 07 Jan 2026 11:31:36 +0200</pubDate>
+        <pubDate>Tue, 13 Jan 2026 18:26:14 +0200</pubDate>
+        
+        <item>
+            <title>We are now seeking postdoctoral researchers to join the ELLIS Institute Finland.</title>
+            <link>/2026/01/12/ELLIS-Institute-Finland-postdoc.html</link>
+            <guid isPermaLink="true">/2026/01/12/ELLIS-Institute-Finland-postdoc.html</guid>
+            <description>&lt;p&gt;We are now seeking postdoctoral researchers to join the ELLIS Institute Finland. Our group is particularly seeking excellent researchers to join us in the fields of deep learning, generative models, reinforcement learning, NLP, and AI for science (especially health and medicine).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ellisinstitute.fi&quot;&gt;ELLIS Institute Finland&lt;/a&gt; is a newly established world-class
+research hub in AI and machine learning. We are developing an ecosystem of top talents,
+businesses and investments in Finland, with fundamental machine learning research at the
+core. The Institute is part of the European Laboratory for Learning and Intelligent Systems
+(&lt;a href=&quot;https://ellis.eu&quot;&gt;ELLIS&lt;/a&gt;), which aims to build a pan-European institution for machine learning research.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;
+Apply here: &lt;a href=&quot;https://www.ellisinstitute.fi/postdoc-recruit-2026&quot;&gt;https://www.ellisinstitute.fi/postdoc-recruit-2026&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our research group fosters a collaborative and innovative environment with ELLIS Institute
+Finland and TurkuNLP, pushing the boundaries of Machine Learning and Natural Language Processing research with a
+strong emphasis on real-world impact.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://turkunlp.org&quot;&gt;TurkuNLP&lt;/a&gt; is an internationally recognized multidisciplinary research
+group specializing in the development of machine learning-based resources, models, and
+tools for NLP tasks using internet-scale data. In recent years, TurkuNLP has created several
+openly available Transformer-based language models, such as FinBERT and FinGPT,
+Finland’s leading BERT and GPT-3 models, and subsequently the Poro and Viking models.
+TurkuNLP was also selected as a pilot user of Europe’s largest supercomputer, LUMI, and
+the group has a long tradition of using high-performance computing in NLP.&lt;/p&gt;
+
+</description>
+            <pubDate>Mon, 12 Jan 2026 00:00:00 +0200</pubDate>
+        </item>
         
         <item>
             <title>Call for Participation - PsyDefDetect shared task (co-located with BioNLP @ ACL 2026)</title>
