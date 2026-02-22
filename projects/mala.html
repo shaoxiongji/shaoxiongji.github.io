@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon">
 
     <!-- Canonical -->
-    <link rel="canonical" href="http://localhost:4000/projects/2020-03-01-medical-coding">
+    <link rel="canonical" href="http://localhost:4000/projects/mala">
 
     <!-- RSS -->
     <link rel="alternate" type="application/atom+xml" title="Home" href="http://localhost:4000/feed.xml"/>
@@ -65,30 +65,30 @@
     
     
     <!-- SEO Meta Tags -->
-    <title>Deep Learning for Medical Code Assignment from Clinical Notes | Shaoxiong Ji</title>
-    <meta name="description" content="Medical code assignment, which predicts medical codes from clinical texts, is a fundamental task of intelligent medical information systems. The emergence of...">
+    <title>Massive Language Adaptation of Large Language Models (MaLA-LM) | Shaoxiong Ji</title>
+    <meta name="description" content="">
     <meta name="keywords" content="Natural Language Processing, Large Language Models, Intelligence, Deep Learning & Data Mining">
     <meta name="author" content="Shaoxiong Ji">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:4000/projects/2020-03-01-medical-coding">
-    <meta property="og:title" content="Deep Learning for Medical Code Assignment from Clinical Notes | Shaoxiong Ji">
-    <meta property="og:description" content="Medical code assignment, which predicts medical codes from clinical texts, is a fundamental task of intelligent medical information systems. The emergence of...">
+    <meta property="og:url" content="http://localhost:4000/projects/mala">
+    <meta property="og:title" content="Massive Language Adaptation of Large Language Models (MaLA-LM) | Shaoxiong Ji">
+    <meta property="og:description" content="">
     <meta property="og:site_name" content="Shaoxiong Ji">
     
     
-    <meta property="og:image" content="http://localhost:4000/img/feats/ambulance.jpg">
+    <meta property="og:image" content="http://localhost:4000/img/feats/ramon-salinero-vEE00Hx5d0Q-unsplash-light.jpg">
     
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="http://localhost:4000/projects/2020-03-01-medical-coding">
-    <meta name="twitter:title" content="Deep Learning for Medical Code Assignment from Clinical Notes | Shaoxiong Ji">
-    <meta name="twitter:description" content="Medical code assignment, which predicts medical codes from clinical texts, is a fundamental task of intelligent medical information systems. The emergence of...">
+    <meta name="twitter:url" content="http://localhost:4000/projects/mala">
+    <meta name="twitter:title" content="Massive Language Adaptation of Large Language Models (MaLA-LM) | Shaoxiong Ji">
+    <meta name="twitter:description" content="">
     
-    <meta name="twitter:image" content="http://localhost:4000/img/feats/ambulance.jpg">
+    <meta name="twitter:image" content="http://localhost:4000/img/feats/ramon-salinero-vEE00Hx5d0Q-unsplash-light.jpg">
     
     
     <meta name="twitter:creator" content="@shaoxiongji">
@@ -240,59 +240,52 @@
 
     <main id="main-content" class="content main">
       <article class="feature-image">
-  <header id="main" style="background-image: url('/img/feats/ambulance.jpg')">
-    <h1 id="Deep+Learning+for+Medical+Code+Assignment+from+Clinical+Notes" class="title">Deep Learning for Medical Code Assignment from Clinical Notes</h1>
+  <header id="main" style="background-image: url('/img/feats/ramon-salinero-vEE00Hx5d0Q-unsplash-light.jpg')">
+    <h1 id="Massive+Language+Adaptation+of+Large+Language+Models+%28MaLA-LM%29" class="title">Massive Language Adaptation of Large Language Models (MaLA-LM)</h1>
     <p class="meta"> Shaoxiong Ji</p>
-    <p class="meta">March 1, 2020</p>
+    <p class="meta">January 1, 2023</p>
     <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ef98c0f0cdd3734"></script>
   </header>
   <br />
   <br />
-  <section class="post-content"><p>Medical code assignment, which predicts medical codes from clinical texts, is a fundamental task of intelligent medical information systems. The emergence of deep models in natural language processing has boosted the development of automatic assignment methods. 
-This project applies deep learning techniques to improve the performance of automatic medical code assignment. 
-Specifically, we use the International Classification of Diseases (ICD) coding system, maintained by the World Health Organization (WHO).</p>
-
-<p>It is challenging to encode lengthy clinical notes with long-term sequential dependency. 
-We propose a Dilated Convolutional Attention Network (DCAN) [1], integrating dilated convolutions, residual connections, and label attention, for medical code assignment. 
-It adopts dilated convolutions to capture complex medical patterns with a receptive field which increases exponentially with dilation size.</p>
-
-<p>Capturing the lengthy and rich semantic information of medical notes and explicitly exploiting the interactions between the notes and codes can help medical text understanding and improve medical code prediction.
-We propose a novel method, gated convolutional neural networks, and a note-code interaction (GatedCNN-NCI) [2], for automatic medical code assignment. 
-Our methods capture the rich semantic information of the lengthy clinical text for better representation by utilizing embedding injection and gated information propagation in the medical note encoding module. 
-With a novel note-code interaction design and a graph message passing mechanism, we explicitly capture the underlying dependency between notes and codes, enabling effective code prediction. A weight sharing scheme is further designed to decrease the number of trainable parameters.</p>
-
-<p>Unsupervised pretraining is an integral part of many natural language processing systems, and transfer learning with language models has achieved remarkable results in downstream tasks.
-In the clinical application of medical code assignment, diagnosis and procedure codes are inferred from lengthy clinical notes such as hospital discharge summaries. 
-However, it is not clear if pretrained models are useful for medical code prediction without further architecture engineering.
-Our third study conducts a comprehensive quantitative analysis [3] of various contextualized language models’ performances, pretrained in different domains, for medical code assignment from clinical notes.
-We propose a hierarchical fine-tuning architecture to capture interactions between distant words and adopt label-wise attention to exploit label information. 
-Contrary to current trends, we demonstrate that a carefully trained classical CNN outperforms attention-based models on a MIMIC-III subset with frequent codes.
-Our empirical findings suggest directions for building robust medical code assignment models.</p>
-
-<p>To solve automated medical coding of different coding systems, we propose a multitask recalibrated aggregation network [4]. In particular, multitask learning shares information across different coding schemes and captures the dependencies between different medical codes. Feature recalibration and aggregation in shared modules enhance representation learning for lengthy notes.</p>
-
-<p><br />
-<br />
-<strong>Publications</strong></p>
-
-<p>[1] Ji, S., Cambria, E., &amp; Marttinen, P. (2020). Dilated Convolutional Attention Network for Medical Code Assignment from Clinical Text. Proceedings of ClinicalNLP.<br />
-[2] Ji, S., Pan, S., &amp; Marttinen, P. (2021). Medical Code Assignment with Gated Convolution and Note-Code Interaction. Findings of ACL-IJCNLP.<br />
-[3] Ji, S., Hölttä, M., &amp; Marttinen, P. (2021). Does the Magic of BERT Apply to Medical Code Assignment? A Quantitative Study. Computers in Biology and Medicine.<br />
-[4] Sun, W., Ji, S., Cambria, E., &amp; Marttinen, P. (2021). Multitask Recalibrated Aggregation Network for Medical Code Prediction. ECML-PKDD.</p>
-
-<p><br />
+  <section class="post-content"><p><br />
 <br /></p>
 
-<p><em>[updated on 10 May, 2021.]</em></p>
+<p>MaLA-LM focuses on adapting large language models to support <strong>hundreds of languages</strong>, including many underrepresented ones. Our models are multilingual, scalable, and optimized for diverse linguistic tasks. Explore our models on <a href="https://huggingface.co/MaLA-LM">Hugging Face</a>.</p>
 
-<p><br />
-<br /></p>
+<h2 id="featured-️">Featured 🗣️</h2>
+<p>Check out our multilingual LLM collections, featuring models trained to handle <strong>500+ languages</strong>, ideal for global, multilingual applications.</p>
 
-<p><span>Photo by <a href="https://unsplash.com/@zhenhu2424?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Zhen Hu</a> on <a href="https://unsplash.com/s/photos/hospital?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+<h3 id="emma-500"><a href="https://huggingface.co/collections/MaLA-LM/emma-500-66eaa9acf1f512c8915b7166"><strong>EMMA-500</strong></a></h3>
 
-<p><br />
-<br />
-<br /></p>
+<p>EMMA-500 is a state-of-the-art multilingual language model designed to improve language representation, especially in low-resource languages, through continual pre-training on the Llama 2 7B architecture. Leveraging the <a href="https://huggingface.co/collections/MaLA-LM/mala-corpus-66e05127641a51de34d39529">MaLA Corpus</a>, which spans over 500 languages and 74 billion tokens, EMMA-500 excels in multilingual tasks like commonsense reasoning, machine translation, open-ended generation, and text classification.</p>
+
+<p>EMMA-500 outperforms other Llama 2-based models in diverse multilingual settings while maintaining robustness in specialized tasks.</p>
+
+<h3 id="mala-corpus"><a href="https://huggingface.co/collections/MaLA-LM/mala-corpus-66e05127641a51de34d39529"><strong>MaLA corpus</strong></a></h3>
+
+<p>The MaLA Corpus (Massive Language Adaptation) is a comprehensive, multilingual dataset designed to support the continual pre-training of large language models. It covers 939 languages and consists of over 74 billion tokens, making it one of the largest datasets of its kind. With a focus on improving the representation of low-resource languages, the MaLA Corpus is a critical resource for advancing multilingual models, particularly those aimed at serving underrepresented languages.</p>
+
+<ul>
+  <li>Language Coverage: Includes data for 939 languages, with 546 languages having over 100,000 tokens.</li>
+  <li>Pre-processing: The corpus is cleaned and deduplicated to ensure high-quality training data.</li>
+</ul>
+
+<h3 id="mala-500"><a href="https://huggingface.co/collections/MaLA-LM/mala-500-660e57f8e53e3cc2ccd31cb9"><strong>MaLA-500</strong></a></h3>
+
+<p>MaLA-500 is a novel large language model designed to cover an extensive range of 534 languages. This model builds upon LLaMA 2 7B and integrates continued pretraining with vocabulary extension, with an expanded vocabulary size of 260,164, and LoRA low-rank adaptation.</p>
+
+<ul>
+  <li><strong>Continued Pretraining:</strong> Enhances the model’s ability to adapt to a wide range of languages.</li>
+  <li><strong>LoRA Low-Rank Adaptation:</strong> LoRA low-rank adaptation refines the model’s adaptation capabilities.</li>
+  <li><strong>Vocabulary Extension:</strong> MaLA-500 boasts an extended vocabulary size of 260,164.</li>
+  <li><strong>Multilingual Proficiency:</strong> Trained on Glot500-c, covering 534 languages.</li>
+</ul>
+
+<p>With vocabulary extension and LoRA modules, the MaLA-500 introduces additional 2.1B trainable parameters, making the total parameters to be 10.7B.</p>
+
+<h2 id="connect-with-us-on-discord">Connect with Us on Discord</h2>
+<p>For those interested in joining the conversation or learning more about the project, you can connect with the community on Discord: <a href="https://discord.com/invite/F5mEb7U6we">MaLA-LM Discord</a>.</p>
 </section>
   <br />
 
@@ -310,12 +303,16 @@ Our empirical findings suggest directions for building robust medical code assig
     
     <p>
     
-    <a class="button" href="/tags#Deep Learning">
-      <i class="fa fa-tag fa-fw"></i> Deep Learning
+    <a class="button" href="/tags#Language Technology">
+      <i class="fa fa-tag fa-fw"></i> Language Technology
     </a>
     
-    <a class="button" href="/tags#Medical Text Processing">
-      <i class="fa fa-tag fa-fw"></i> Medical Text Processing
+    <a class="button" href="/tags#Large Language Models">
+      <i class="fa fa-tag fa-fw"></i> Large Language Models
+    </a>
+    
+    <a class="button" href="/tags#Multilingual NLP">
+      <i class="fa fa-tag fa-fw"></i> Multilingual NLP
     </a>
     
     <a class="button" href="/tags#Projects">
@@ -352,16 +349,16 @@ Our empirical findings suggest directions for building robust medical code assig
   
   <div id="previous-post" class="post-nav-post">
       <p>Previous post</p>
-      <a href="/projects/2020-02-10-suicidal-ideation-detection">
-        Suicidal Ideation Detection in Online Social Content
+      <a href="/projects/hplt">
+        High-Performance Language Technologies (HPLT)
       </a>
   </div>
   
   
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
-      <a href="/projects/2022-04-04-nlp-for-healthcare">
-        Natural Language Processing for Healthcare
+      <a href="/projects/dynamic">
+        Dynamic Network Approach of Mental Health to Stimulate Innovations for Change
       </a>
   </div>
   

@@ -77,7 +77,7 @@
     
   <url>
     <loc>http://localhost:4000/about/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -86,7 +86,7 @@
     
   <url>
     <loc>http://localhost:4000/blogs/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -97,7 +97,7 @@
     
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -106,7 +106,7 @@
     
   <url>
     <loc>http://localhost:4000/assets/css/main.css</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -115,7 +115,7 @@
     
   <url>
     <loc>http://localhost:4000/msc_thesis/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -124,7 +124,7 @@
     
   <url>
     <loc>http://localhost:4000/past_events/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -133,7 +133,7 @@
     
   <url>
     <loc>http://localhost:4000/people/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -142,7 +142,7 @@
     
   <url>
     <loc>http://localhost:4000/projects/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -151,7 +151,7 @@
     
   <url>
     <loc>http://localhost:4000/publications/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -160,7 +160,7 @@
     
   <url>
     <loc>http://localhost:4000/search/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -171,7 +171,7 @@
     
   <url>
     <loc>http://localhost:4000/tags/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -180,7 +180,7 @@
     
   <url>
     <loc>http://localhost:4000/talks/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -189,7 +189,7 @@
     
   <url>
     <loc>http://localhost:4000/visiting_researcher/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -198,7 +198,7 @@
     
   <url>
     <loc>http://localhost:4000/blogs/page2/</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -207,7 +207,7 @@
     
   <url>
     <loc>http://localhost:4000/assets/css/main.css.map</loc>
-    <lastmod>2026-02-21T11:41:42+02:00</lastmod>
+    <lastmod>2026-02-22T14:43:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -215,71 +215,36 @@
   
   
   <url>
-    <loc>http://localhost:4000/projects/2017-08-28-cyberbullying-detection</loc>
-    <lastmod>2017-08-28T00:00:00+03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/projects/2018-12-17-federated-deep-learning</loc>
-    <lastmod>2018-03-30T00:00:00+03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/projects/2020-02-10-suicidal-ideation-detection</loc>
-    <lastmod>2020-02-10T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/projects/2020-03-01-medical-coding</loc>
-    <lastmod>2020-03-01T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/projects/2022-04-04-nlp-for-healthcare</loc>
-    <lastmod>2020-03-01T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/projects/2021-10-13-nlp-for-mental-health</loc>
-    <lastmod>2021-10-13T00:00:00+03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/projects/2023-01-01-hplt</loc>
+    <loc>http://localhost:4000/projects/hplt</loc>
     <lastmod>2023-01-01T00:00:00+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/projects/2023-07-01-mala</loc>
+    <loc>http://localhost:4000/projects/mala</loc>
     <lastmod>2023-01-01T00:00:00+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/projects/2024-10-02-dynamic</loc>
+    <loc>http://localhost:4000/projects/dynamic</loc>
     <lastmod>2024-10-02T00:00:00+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/projects/2025-10-01-haif</loc>
+    <loc>http://localhost:4000/projects/haif</loc>
     <lastmod>2025-10-01T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/projects/aimh</loc>
+    <lastmod>2026-02-22T00:00:00+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
